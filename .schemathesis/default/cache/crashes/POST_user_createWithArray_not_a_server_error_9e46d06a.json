@@ -1,0 +1,94 @@
+{
+  "operation": "POST /user/createWithArray",
+  "method": "POST",
+  "path_template": "/user/createWithArray",
+  "fingerprint": "9e46d06a",
+  "case_id": "kbKUtA",
+  "code_sample": "curl -X POST -H 'Content-Type: application/json' -d '[{\"id\": 0, \"username\": \"\", \"firstName\": \"\", \"lastName\": \"\", \"email\": \"\", \"password\": \"\", \"phone\": \"\", \"userStatus\": 2147483648}]' https://petstore.swagger.io/v2/user/createWithArray",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/user/createWithArray",
+      "url_template": "https://petstore.swagger.io/v2/user/createWithArray",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "kbKUtA",
+        "Content-Type": "application/json",
+        "Content-Length": "128"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 15:12:46 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":500,\"type\":\"unknown\",\"message\":\"something bad happened\"}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "not_a_server_error",
+          "status": "failure",
+          "message": "Server error"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 6.130000110715628e-05,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "coverage",
+          "data": {
+            "type": "CoveragePhaseData",
+            "description": "Array with invalid items: userStatus: Value greater than maximum",
+            "location": "/items/properties/userStatus/maximum",
+            "parameter": "application/json",
+            "parameter_location": "BODY",
+            "scenario": "value_above_maximum"
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/createWithArray",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": [
+          {
+            "id": 0,
+            "username": "",
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "password": "[Filtered]",
+            "phone": "",
+            "userStatus": 2147483648
+          }
+        ]
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    }
+  ]
+}

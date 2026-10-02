@@ -1,0 +1,95 @@
+{
+  "operation": "POST /pet/{petId}/uploadImage",
+  "method": "POST",
+  "path_template": "/pet/{petId}/uploadImage",
+  "fingerprint": "23a06f7b",
+  "case_id": "Z8PgiN",
+  "code_sample": "curl -X POST -H 'Content-Type: multipart/form-data; boundary=eb635997a6c6c073faeb36ca9d6d50e8' -d $'--eb635997a6c6c073faeb36ca9d6d50e8\\r\\n' https://petstore.swagger.io/v2/pet/9223372016900036960/uploadImage\n\n\u26a0\ufe0f  Request body contains non-printable characters. Actual value: b'--eb635997a6c6c073faeb36ca9d6d50e8\\r\\n'",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/pet/9223372016900036960/uploadImage",
+      "url_template": "https://petstore.swagger.io/v2/pet/{petId}/uploadImage",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "Z8PgiN",
+        "Content-Type": "multipart/form-data; boundary=17c859b7813d48df7445ef564cacf207",
+        "Content-Length": "38"
+      },
+      "response": {
+        "status_code": 400,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:08:52 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":400,\"type\":\"unknown\",\"message\":\"org.jvnet.mimepull.MIMEParsingException: Missing start boundary\"}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "positive_data_acceptance",
+          "status": "failure",
+          "message": "API rejected schema-compliant request\n\nValid data should have been accepted\nExpected: 2xx, 401, 403, 404, 409, 429, 5xx"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.03240669996012002,
+          "mode": "positive"
+        },
+        "components": {
+          "PATH": "positive",
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "fuzzing",
+          "data": {
+            "type": "FuzzingPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [
+          {
+            "location": "path",
+            "parameter_name": "petId",
+            "resource_name": "Pet",
+            "resource_field": "id",
+            "source_operation": "GET /pet/findByStatus",
+            "source_status": 200
+          }
+        ],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/{petId}/uploadImage",
+      "path_parameters": {
+        "petId": 9223372016900036960
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {}
+      },
+      "media_type": "multipart/form-data",
+      "parent_index": null
+    }
+  ]
+}

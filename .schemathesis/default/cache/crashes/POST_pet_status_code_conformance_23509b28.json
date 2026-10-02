@@ -1,0 +1,171 @@
+{
+  "operation": "POST /pet",
+  "method": "POST",
+  "path_template": "/pet",
+  "fingerprint": "23509b28",
+  "case_id": "EDfCJc",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=sold&status=pending&status=sold'\ncurl -X POST -H 'Content-Type: application/json' -d $'\\x00' https://petstore.swagger.io/v2/pet\n\n\u26a0\ufe0f  Request body contains non-printable characters. Actual value: b'\\x00'",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold&status=pending&status=sold",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByStatus",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "mvBr8Z"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:15:21 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[{\"id\":9223372016900037478,\"name\":\"\u00e4j\u00b5\u00e0\",\"photoUrls\":[\"null\",\"\",\"\u00e0\",\"\\\\`N\"],\"tags\":[],\"status\":\"sold\"},{\"id\":9223372016900037513,\"category\":{\"id\":0,\"name\":\"Doberman\"},\"name\":\"Eq-dog\",\"photoUrls\":[\"\u008a\",\"]\\uD954\\uDED7\",\"\",\"\\u0000\u009f\u0095G\ub513\u00f5\\u001E\\uDA5C\\uDD29Y\\uD802\\uDE96\\uDA2C\\uDC5D,\u00a3\u4d57DRV\\uD8D8\\uDE92j\u00e11\u00d9\\uDA49\\uDE79\u00bc\u00a5,S\u0086\u0080\u00fb\\u000B\u00d6\u00850\\uD8B6\\uDD34\u00e3\\uD853\\uDCC8\u00db\u00d0\\u001A\",\"\",\"\u00d9\u00dd\\uDA7E\\uDD9C\\uD8EE\\uDD80\u0080\u00e5\u00ca\u00f1\"],\"tags\":[{\"id\":14,\"name\":\"=\"},{\"id\":0,\"name\":\"\\uDA93\\uDC94\"},{\"id\":0},{\"id\":-418326094921037056,\"name\":\"\u00a2\"}],\"status\":\"sold\"},{\"id\":7618128,\"category\":{\"id\":26,\"name\":\"Pet-20\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-495.jpg\"],\"tags\":[{\"id\":33,\"name\":\"tag-89\"}],\"status\":\"sold\"},{\"id\":6139042,\"category\":{\"id\":78,\"name\":\"Pet-187\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-885.jpg\"],\"tags\":[{\"id\":23,\"name\":\"tag-16\"}],\"status\":\"sold\"},{\"id\":4728394,\"category\":{\"id\":71,\"name\":\"Pet-947\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-855.jpg\"],\"tags\":[{\"id\":48,\"name\":\"tag-11\"}],\"status\":\"sold\"},{\"id\":7025564,\"category\":{\"id\":1,\"name\":\"Pet-65\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-342.jpg\"],\"tags\":[{\"id\":5,\"name\":\"tag-10\"}],\"status\":\"sold\"},{\"id\":8738130,\"category\":{\"id\":29,\"name\":\"Pet-235\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-358.jpg\"],\"tags\":[{\"id\":2,\"name\":\"tag-36\"}],\"status\":\"sold\"},{\"id\":5822963,\"category\":{\"id\":48,\"name\":\"Pet-735\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-211.jpg\"],\"tags\":[{\"id\":22,\"name\":\"tag-86\"}],\"status\":\"sold\"},{\"id\":2665293,\"category\":{\"id\":32,\"name\":\"Pet-744\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-121.jpg\"],\"tags\":[{\"id\":45,\"name\":\"tag-70\"}],\"status\":\"sold\"},{\"id\":7151851,\"category\":{\"id\":79,\"name\":\"Pet-751\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-805.jpg\"],\"tags\":[{\"id\":42,\"name\":\"tag-1\"}],\"status\":\"sold\"},{\"id\":8393721,\"category\":{\"id\":69,\"name\":\"Pet-771\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-271.jpg\"],\"tags\":[{\"id\":50,\"name\":\"tag-48\"}],\"status\":\"sold\"},{\"id\":9103337,\"category\":{\"id\":76,\"name\":\"Pet-295\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-139.jpg\"],\"tags\":[{\"id\":1,\"name\":\"tag-77\"}],\"status\":\"sold\"},{\"id\":9666563,\"category\":{\"id\":88,\"name\":\"Pet-633\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-119.jpg\"],\"tags\":[{\"id\":11,\"name\":\"tag-18\"}],\"status\":\"sold\"},{\"id\":9772776,\"category\":{\"id\":79,\"name\":\"Pet-259\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-762.jpg\"],\"tags\":[{\"id\":6,\"name\":\"tag-1\"}],\"status\":\"sold\"},{\"id\":5580217,\"category\":{\"id\":26,\"name\":\"Pet-634\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-390.jpg\"],\"tags\":[{\"id\":7,\"name\":\"tag-76\"}],\"status\":\"sold\"},{\"id\":3111182,\"category\":{\"id\":40,\"name\":\"Pet-713\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-339.jpg\"],\"tags\":[{\"id\":43,\"name\":\"tag-56\"}],\"status\":\"sold\"},{\"id\":1165619,\"category\":{\"id\":91,\"name\":\"Pet-452\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-559.jpg\"],\"tags\":[{\"id\":41,\"name\":\"tag-55\"}],\"status\":\"sold\"},{\"id\":7924258,\"category\":{\"id\":54,\"name\":\"Pet-708\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-564.jpg\"],\"tags\":[{\"id\":20,\"name\":\"tag-77\"}],\"status\":\"sold\"},{\"id\":7096983,\"category\":{\"id\":15,\"name\":\"Pet-576\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-860.jpg\"],\"tags\":[{\"id\":36,\"name\":\"tag-65\"}],\"status\":\"sold\"},{\"id\":6496347,\"category\":{\"id\":44,\"name\":\"Pet-169\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-262.jpg\"],\"tags\":[{\"id\":11,\"name\":\"tag-83\"}],\"status\":\"sold\"},{\"id\":1682436,\"category\":{\"id\":17,\"name\":\"Pet-825\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-715.jpg\"],\"tags\":[{\"id\":39,\"name\":\"tag-16\"}],\"status\":\"sold\"},{\"id\":9527879,\"category\":{\"id\":43,\"name\":\"Pet-987\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-838.jpg\"],\"tags\":[{\"id\":19,\"name\":\"tag-92\"}],\"status\":\"sold\"},{\"id\":8866637,\"category\":{\"id\":92,\"name\":\"Pet-436\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-331.jpg\"],\"tags\":[{\"id\":24,\"name\":\"tag-22\"}],\"status\":\"sold\"},{\"id\":9827574,\"category\":{\"id\":47,\"name\":\"Pet-312\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-939.jpg\"],\"tags\":[{\"id\":35,\"name\":\"tag-7\"}],\"status\":\"sold\"},{\"id\":3989218,\"category\":{\"id\":8,\"name\":\"Pet-653\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-467.jpg\"],\"tags\":[{\"id\":47,\"name\":\"tag-41\"}],\"status\":\"sold\"},{\"id\":5398977,\"category\":{\"id\":88,\"name\":\"Pet-834\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-16.jpg\"],\"tags\":[{\"id\":15,\"name\":\"tag-76\"}],\"status\":\"sold\"},{\"id\":6149099,\"category\":{\"id\":64,\"name\":\"Pet-744\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-458.jpg\"],\"tags\":[{\"id\":23,\"name\":\"tag-72\"}],\"status\":\"sold\"},{\"id\":4405408,\"category\":{\"id\":15,\"name\":\"Pet-483\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-321.jpg\"],\"tags\":[{\"id\":25,\"name\":\"tag-6\"}],\"status\":\"sold\"},{\"id\":5367887,\"category\":{\"id\":6,\"name\":\"Pet-195\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-961.jpg\"],\"tags\":[{\"id\":17,\"name\":\"tag-85\"}],\"status\":\"sold\"},{\"id\":9290173,\"category\":{\"id\":13,\"name\":\"Pet-643\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-670.jpg\"],\"tags\":[{\"id\":46,\"name\":\"tag-6\"}],\"status\":\"sold\"},{\"id\":6684645,\"category\":{\"id\":29,\"name\":\"Pet-775\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-247.jpg\"],\"tags\":[{\"id\":34,\"name\":\"tag-53\"}],\"status\":\"sold\"},{\"id\":9223372016900038297,\"category\":{\"id\":0},\"name\":\"test\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"},{\"id\":2681361,\"category\":{\"id\":75,\"name\":\"Pet-997\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-228.jpg\"],\"tags\":[{\"id\":36,\"name\":\"tag-62\"}],\"status\":\"sold\"},{\"id\":4287644,\"category\":{\"id\":82,\"name\":\"Pet-715\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-331.jpg\"],\"tags\":[{\"id\":24,\"name\":\"tag-52\"}],\"status\":\"sold\"},{\"id\":1330587,\"category\":{\"id\":62,\"name\":\"Pet-425\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-974.jpg\"],\"tags\":[{\"id\":45,\"name\":\"tag-97\"}],\"status\":\"sold\"},{\"id\":9674684,\"category\":{\"id\":57,\"name\":\"Pet-301\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-803.jpg\"],\"tags\":[{\"id\":2,\"name\":\"tag-71\"}],\"status\":\"sold\"},{\"id\":8708862,\"category\":{\"id\":88,\"name\":\"Pet-850\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-281.jpg\"],\"tags\":[{\"id\":41,\"name\":\"tag-43\"}],\"status\":\"sold\"},{\"id\":5923423,\"category\":{\"id\":20,\"name\":\"Pet-176\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-702.jpg\"],\"tags\":[{\"id\":43,\"name\":\"tag-18\"}],\"status\":\"sold\"},{\"id\":2607121,\"category\":{\"id\":21,\"name\":\"Pet-362\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-545.jpg\"],\"tags\":[{\"id\":25,\"name\":\"tag-59\"}],\"status\":\"sold\"},{\"id\":3806633,\"category\":{\"id\":93,\"name\":\"Pet-993\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-178.jpg\"],\"tags\":[{\"id\":19,\"name\":\"tag-28\"}],\"status\":\"sold\"},{\"id\":6821602,\"category\":{\"id\":52,\"name\":\"Pet-982\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-876.jpg\"],\"tags\":[{\"id\":31,\"name\":\"tag-80\"}],\"status\":\"sold\"},{\"id\":1,\"category\":{\"id\":1,\"name\":\"cat\"},\"name\":\"dog\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"},{\"id\":5488768,\"category\":{\"id\":59,\"name\":\"Pet-88\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-627.jpg\"],\"tags\":[{\"id\":17,\"name\":\"tag-23\"}],\"status\":\"sold\"},{\"id\":4161647,\"category\":{\"id\":73,\"name\":\"Pet-18\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-843.jpg\"],\"tags\":[{\"id\":6,\"name\":\"tag-16\"}],\"status\":\"sold\"},{\"id\":8021868,\"category\":{\"id\":25,\"name\":\"Pet-965\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-853.jpg\"],\"tags\":[{\"id\":20,\"name\":\"tag-10\"}],\"status\":\"sold\"},{\"id\":4900968,\"category\":{\"id\":16,\"name\":\"Pet-732\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-788.jpg\"],\"tags\":[{\"id\":43,\"name\":\"tag-76\"}],\"status\":\"sold\"},{\"id\":8601471,\"category\":{\"id\":59,\"name\":\"Pet-776\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-458.jpg\"],\"tags\":[{\"id\":1,\"name\":\"tag-72\"}],\"status\":\"sold\"},{\"id\":4020478,\"category\":{\"id\":81,\"name\":\"Pet-154\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-212.jpg\"],\"tags\":[{\"id\":28,\"name\":\"tag-2\"}],\"status\":\"sold\"},{\"id\":4862176,\"category\":{\"id\":10,\"name\":\"Pet-982\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-115.jpg\"],\"tags\":[{\"id\":29,\"name\":\"tag-10\"}],\"status\":\"sold\"},{\"id\":6907565,\"category\":{\"id\":35,\"name\":\"Pet-744\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-340.jpg\"],\"tags\":[{\"id\":43,\"name\":\"tag-42\"}],\"status\":\"sold\"},{\"id\":2622569,\"category\":{\"id\":92,\"name\":\"Pet-150\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-302.jpg\"],\"tags\":[{\"id\":16,\"name\":\"tag-28\"}],\"status\":\"sold\"},{\"id\":3042198,\"category\":{\"id\":1,\"name\":\"Pet-833\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-582.jpg\"],\"tags\":[{\"id\":28,\"name\":\"tag-14\"}],\"status\":\"sold\"},{\"id\":3717849,\"category\":{\"id\":65,\"name\":\"Pet-240\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-199.jpg\"],\"tags\":[{\"id\":49,\"name\":\"tag-37\"}],\"status\":\"sold\"},{\"id\":7785847,\"category\":{\"id\":84,\"name\":\"Pet-653\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-550.jpg\"],\"tags\":[{\"id\":29,\"name\":\"tag-26\"}],\"status\":\"sold\"},{\"id\":3579581,\"category\":{\"id\":76,\"name\":\"Pet-132\"},\"name\":\"cat-20260930201416\",\"photoUrls\":[\"https://example.com/photo-476.jpg\"],\"tags\":[{\"id\":21,\"name\":\"tag-76\"}],\"status\":\"sold\"}]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0008415000047534704,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByStatus",
+      "path_parameters": {},
+      "query": {
+        "status": [
+          "sold",
+          "pending",
+          "sold"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "EDfCJc",
+        "Content-Type": "application/json",
+        "Content-Length": "1"
+      },
+      "response": {
+        "status_code": 400,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:15:21 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":400,\"type\":\"unknown\",\"message\":\"bad input\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByStatus -> [200] PostPet_0 -> POST /pet",
+        "parameters": {},
+        "requestBody": {
+          "id": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 400\nDocumented: 405"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.003388599958270788,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Invalid syntax: random bytes",
+            "location": null,
+            "parameter": null,
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [],
+                "parameter_location": "body",
+                "schema_pointer": "",
+                "channel": "schema",
+                "operator": "syntax_fuzzing",
+                "keywords": [],
+                "parameter": null,
+                "original_value": null,
+                "new_value": null
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "base64",
+        "value": "AA=="
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

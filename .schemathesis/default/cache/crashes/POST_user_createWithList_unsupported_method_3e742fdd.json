@@ -1,0 +1,90 @@
+{
+  "operation": "POST /user/createWithList",
+  "method": "TRACE",
+  "path_template": "/user/createWithList",
+  "fingerprint": "3e742fdd",
+  "case_id": "pZ01Pg",
+  "code_sample": "curl -X TRACE -H 'Content-Type: application/json' -d '[{\"id\": 0, \"username\": \"\", \"firstName\": \"\", \"lastName\": \"\", \"email\": \"\", \"password\": \"\", \"phone\": \"\", \"userStatus\": 0}]' https://petstore.swagger.io/v2/user/createWithList",
+  "sequence": [
+    {
+      "method": "TRACE",
+      "url": "https://petstore.swagger.io/v2/user/createWithList",
+      "url_template": "https://petstore.swagger.io/v2/user/createWithList",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "pZ01Pg",
+        "Content-Type": "application/json",
+        "Content-Length": "119"
+      },
+      "response": {
+        "status_code": 405,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:08:15 GMT",
+          "content-type": "text/html",
+          "content-length": "122",
+          "connection": "close"
+        },
+        "body": "<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "unsupported_method",
+          "status": "failure",
+          "message": "Unsupported methods\n\nTRACE returned 405 without required `Allow` header\n\nAdd `Allow` header listing supported methods (required by RFC 9110)"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 5.599926225841045e-06,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "coverage",
+          "data": {
+            "type": "CoveragePhaseData",
+            "description": "Unspecified HTTP method: TRACE",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "scenario": "unspecified_http_method"
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/createWithList",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": [
+          {
+            "id": 0,
+            "username": "",
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "password": "[Filtered]",
+            "phone": "",
+            "userStatus": 0
+          }
+        ]
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    }
+  ]
+}

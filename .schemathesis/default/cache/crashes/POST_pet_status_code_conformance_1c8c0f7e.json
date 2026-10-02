@@ -1,0 +1,198 @@
+{
+  "operation": "POST /pet",
+  "method": "POST",
+  "path_template": "/pet",
+  "fingerprint": "1c8c0f7e",
+  "case_id": "R0TCfZ",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=pending&status=available&status=pending&status=available&status=available&status=pending&status=pending'\ncurl -X POST -H 'Content-Type: application/json' -d '{\"\\ud9de\\udddc\": [9.936771529198855e-143, false], \"name\": \"\\ud9e9\\udcb5\\uda5c\\udcab\\ud9c6\\udc33\", \"id\": 9223372036854775808, \"photoUrls\": [\"\\u0003\\u00d6\\n\\u00c1\", \"\\u00c4J\\u00f2\\ud9e0\\udd15D\\u0015\\uda97\\udcd3\\u00e6\", \"9\\u00a6\\u5d1a\", \"\", \"\\u00c5\\u00c7;;\\u00ba\\u00b0\\ud99f\\udc0b\\ud829\\udd9a\", \"\", \"\\u00fb\\u00f9\\u00f9\\u00e4`\"], \"tags\": []}' https://petstore.swagger.io/v2/pet",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=pending&status=available&status=pending&status=available&status=available&status=pending&status=pending",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByStatus",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "DydK3r"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:12:02 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[{\"id\":112233,\"category\":{\"id\":30,\"name\":\"Eq-dog\"},\"name\":\"Unicorn\",\"photoUrls\":[\"URLLink\"],\"tags\":[{\"id\":10,\"name\":\"Doberman\"}],\"status\":\"available\"},{\"id\":9223372016900037371,\"name\":\"if why essence\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"},{\"id\":9223372016900037475,\"category\":{\"id\":0},\"name\":\"\\uDB30\\uDDB7\\u00195i+\\uD9D8\\uDEB1m\\u0000s\u0093\u00df\u00ff\\u001B9\u00d8\\uD936\\uDFA3\u00b6\u00ca\",\"photoUrls\":[\"\\u0015B\",\"\",\"\u00d1\u00f2\",\"\u00e8$\\uD86B\\uDF717M\u008d\u0092s\u00d6\",\"\\uD9AB\\uDF815\u009c\u00cf\",\"\",\"\u00dctd\u009c\u00fc/J\u007fn\\uD9BA\\uDC38p\u00dcxv\\uDB6A\\uDDF5\u009d+\\uD9E1\\uDC08\u00b2\u00a9\\uDBA1\\uDE0C=\u55b7\\\\\\uD8A2\\uDCD8\u00d5s0\\t.\u00ea\u00bd\u00c5c\\uD88B\\uDF09\\uD8C7\\uDC02\u00a5\u00e7\",\"{\u00fed\\u0015\u00ea\u00dc\\uDA0F\\uDD3E\\uD96A\\uDD49.\u00c6\",\"\\u0016\u00f7\u00ee#\",\"\\u0011\u00c3p(\u450d\"],\"tags\":[{\"id\":2718843993,\"name\":\"\"},{\"id\":-18,\"name\":\"\u00da\u00e2Q\u00e4#\"},{\"id\":0},{\"id\":18815,\"name\":\"\u00aa\"},{\"id\":0},{\"id\":448,\"name\":\"\"},{\"id\":0},{\"id\":-293,\"name\":\"\u00b1?\u00aam\"},{\"id\":0,\"name\":\"\"},{\"id\":0}],\"status\":\"available\"}]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.001132700010202825,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByStatus",
+      "path_parameters": {},
+      "query": {
+        "status": [
+          "available",
+          "sold",
+          "pending",
+          "available",
+          "pending",
+          "available",
+          "available",
+          "pending",
+          "pending"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "R0TCfZ",
+        "Content-Type": "application/json",
+        "Content-Length": "337"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:12:04 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":500,\"type\":\"unknown\",\"message\":\"something bad happened\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByStatus -> [200] PostPet_0 -> POST /pet",
+        "parameters": {},
+        "requestBody": {
+          "id": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 500\nDocumented: 405"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.008429400040768087,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `maximum` at /$ref/schema1/properties/id (was -30418, became 9223372036854775808)",
+            "location": "/$ref/schema1/properties/id",
+            "parameter": "id",
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "id"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/$ref/schema1/properties/id",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "maximum"
+                ],
+                "parameter": "id",
+                "original_value": -30418,
+                "new_value": 9223372036854775808
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "\ud9de\udddc": [
+            9.936771529198855e-143,
+            false
+          ],
+          "name": "\ud9e9\udcb5\uda5c\udcab\ud9c6\udc33",
+          "id": 9223372036854775808,
+          "photoUrls": [
+            "\u0003\u00d6\n\u00c1",
+            "\u00c4J\u00f2\ud9e0\udd15D\u0015\uda97\udcd3\u00e6",
+            "9\u00a6\u5d1a",
+            "",
+            "\u00c5\u00c7;;\u00ba\u00b0\ud99f\udc0b\ud829\udd9a",
+            "",
+            "\u00fb\u00f9\u00f9\u00e4`"
+          ],
+          "tags": []
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

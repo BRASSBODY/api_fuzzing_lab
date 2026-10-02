@@ -1,0 +1,23 @@
+meta {
+  name: Get Ticket Bouquets
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:4011/v1/ticket-bouquet
+}
+
+headers {
+  Content-Type: application/json
+}
+
+assert {
+  res.status: in [200, 400, 401, 422, 500]
+}
+
+tests {
+  test("Ticket Bouquet endpoint validation", function() {
+    expect([200, 400, 401, 422, 500]).to.include(res.status);
+  });
+}

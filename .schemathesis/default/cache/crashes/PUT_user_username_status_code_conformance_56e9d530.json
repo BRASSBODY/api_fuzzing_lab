@@ -1,0 +1,86 @@
+{
+  "operation": "PUT /user/{username}",
+  "method": "PUT",
+  "path_template": "/user/{username}",
+  "fingerprint": "56e9d530",
+  "case_id": "dVT82X",
+  "code_sample": "curl -X PUT -H 'Content-Type: application/json' -d '{}' https://petstore.swagger.io/v2/user/0",
+  "sequence": [
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/user/0",
+      "url_template": "https://petstore.swagger.io/v2/user/{username}",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "dVT82X",
+        "Content-Type": "application/json",
+        "Content-Length": "2"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:08:55 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"0\"}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 200\nDocumented: 400, 404"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.011076400056481361,
+          "mode": "positive"
+        },
+        "components": {
+          "PATH": "positive",
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "fuzzing",
+          "data": {
+            "type": "FuzzingPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/{username}",
+      "path_parameters": {
+        "username": "0"
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {}
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    }
+  ]
+}

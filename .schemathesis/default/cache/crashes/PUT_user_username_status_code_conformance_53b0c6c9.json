@@ -1,0 +1,251 @@
+{
+  "operation": "PUT /user/{username}",
+  "method": "PUT",
+  "path_template": "/user/{username}",
+  "fingerprint": "53b0c6c9",
+  "case_id": "HePJAR",
+  "code_sample": "curl -X POST -H 'Content-Type: application/json' -d '{\"\": {\"\": {\"?\\u0097\\u001a\\u00bb\\u00e8\\u00e1b\\u00b3N\\u009e\\u00bf\": true}}, \"email\": \"\", \"username\": \"\\n\\u0005\", \"lastName\": \"+\\u00a0\\u00baP\\u0085\", \"phone\": \"\\u000f\\u009d\\u00c5\\u00e4\\u00ac\\ud86d\\udc8d\\u0096\\u00e4\\ud85e\\udfaf\", \"userStatus\": 2147483647, \"firstName\": \"\\u0019S\", \"password\": \"\", \"id\": 6561917025}' https://petstore.swagger.io/v2/user\ncurl -X PUT -H 'Content-Type: application/json' -d '{\"\": [], \"\\ud806\\udc46\\u0080\\u00fd\": {}, \"\\u00bd\\udb76\\udc57\": \"\\u00f7f|\\u0092\", \"\\u00f9\\u00ef\": {\"\\u00da\\ud856\\udfcdv\\udb2f\\udf26\\udb1e\\udfbb)\": null, \"\": [], \"(\\u256f\\u00b0\\u25a1\\u00b0\\uff09\\u256f\\ufe35 \\u253b\\u2501\\u253b)\": {\"\": null, \"True\": {}}}, \"lastName\": \"\\u00d1\", \"firstName\": \"5k\", \"userStatus\": -2147483649, \"phone\": \"\\u00c8\\u008b\\u00b5\", \"id\": 6561917025, \"email\": \"\\u00c8\\u00ce\\u00b9T0\\u00e6|\", \"username\": 6561917025, \"password\": \"\"}' https://petstore.swagger.io/v2/user/6561917025",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/user",
+      "url_template": "https://petstore.swagger.io/v2/user",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "mMN2ZK",
+        "Content-Type": "application/json",
+        "Content-Length": "309"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:16:54 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"6561917025\"}"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.016592900035902858,
+          "mode": "positive"
+        },
+        "components": {
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [
+          {
+            "location": "body",
+            "parameter_name": "id",
+            "resource_name": "User",
+            "resource_field": "id",
+            "source_operation": "POST /user",
+            "source_status": 200
+          },
+          {
+            "location": "body",
+            "parameter_name": "username",
+            "resource_name": "User",
+            "resource_field": "username",
+            "source_operation": "POST /user",
+            "source_status": 200
+          }
+        ],
+        "pool_misses": [],
+        "semantic_draws": [
+          {
+            "path": [
+              "firstName"
+            ],
+            "type_token": "string",
+            "format_token": null,
+            "pattern_hash": null,
+            "normalized_name": "firstname",
+            "value": "\u0019S",
+            "source_operation": "GET /user/{username}"
+          },
+          {
+            "path": [
+              "password"
+            ],
+            "type_token": "string",
+            "format_token": null,
+            "pattern_hash": null,
+            "normalized_name": "password",
+            "value": "",
+            "source_operation": "GET /user/{username}"
+          }
+        ],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "": {
+            "": {
+              "?\u0097\u001a\u00bb\u00e8\u00e1b\u00b3N\u009e\u00bf": true
+            }
+          },
+          "email": "",
+          "username": "\n\u0005",
+          "lastName": "+\u00a0\u00baP\u0085",
+          "phone": "\u000f\u009d\u00c5\u00e4\u00ac\ud86d\udc8d\u0096\u00e4\ud85e\udfaf",
+          "userStatus": 2147483647,
+          "firstName": "\u0019S",
+          "password": "[Filtered]",
+          "id": 6561917025
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    },
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/user/6561917025",
+      "url_template": "https://petstore.swagger.io/v2/user/{username}",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "HePJAR",
+        "Content-Type": "application/json",
+        "Content-Length": "448"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:16:56 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":500,\"type\":\"unknown\",\"message\":\"something bad happened\"}"
+      },
+      "link": {
+        "operationId": "POST /user -> [default] PutUser -> PUT /user/{username}",
+        "parameters": {
+          "path.username": "$request.body#/id"
+        },
+        "requestBody": {
+          "id": "$request.body#/id",
+          "username": "$request.body#/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 500\nDocumented: 400, 404"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.02478689991403371,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `minimum` at /properties/userStatus (was 37, became -2147483649)",
+            "location": "/properties/userStatus",
+            "parameter": "userStatus",
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "userStatus"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/userStatus",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "minimum"
+                ],
+                "parameter": "userStatus",
+                "original_value": 37,
+                "new_value": -2147483649
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/{username}",
+      "path_parameters": {
+        "username": 6561917025
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "": [],
+          "\ud806\udc46\u0080\u00fd": {},
+          "\u00bd\udb76\udc57": "\u00f7f|\u0092",
+          "\u00f9\u00ef": {
+            "\u00da\ud856\udfcdv\udb2f\udf26\udb1e\udfbb)": null,
+            "": [],
+            "(\u256f\u00b0\u25a1\u00b0\uff09\u256f\ufe35 \u253b\u2501\u253b)": {
+              "": null,
+              "True": {}
+            }
+          },
+          "lastName": "\u00d1",
+          "firstName": "5k",
+          "userStatus": -2147483649,
+          "phone": "\u00c8\u008b\u00b5",
+          "id": 6561917025,
+          "email": "\u00c8\u00ce\u00b9T0\u00e6|",
+          "username": 6561917025,
+          "password": "[Filtered]"
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "operation": "PUT /pet",
+  "method": "PUT",
+  "path_template": "/pet",
+  "fingerprint": "1e7d174b",
+  "case_id": "TcNChy",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=sold'\ncurl -X GET -H 'api_key: [Filtered]' https://petstore.swagger.io/v2/pet/9223372016900037499\ncurl -X PUT -H 'Content-Type: application/xml' -d $'<Pet><element></element><__o_____Q_>null</__o_____Q_><__o_____Q_>4294967296</__o_____Q_><__o_____Q_>-0.18027469278384764</__o_____Q_><__o_____Q_>1.0286568015378372e-306</__o_____Q_><__o_____Q_></__o_____Q_><_______un__><_Go></_Go><___h>true</___h><__><x_0>8.182183346681866e-289</x_0><element>\u00f4</element><_s__>null</_s__></__></_______un__><x_1_4____Q></x_1_4____Q><f____>true</f____><id>-242263767243</id><name>\u00eel</name><status>__not_in_enum__</status><photoUrls><photoUrl>\ud82e\udee2d\u00ce\ud84a\udec2</photoUrl><photoUrl>\u00f8\u0082)\\x7f\u00f5\ud8de\udc60)\u00ca\u00e4\u00dd</photoUrl><photoUrl></photoUrl><photoUrl>\u00fd\u0098\u008e\u00ff\u00c5</photoUrl><photoUrl></photoUrl><photoUrl>x\u00eee\u00cc\u00b1\u00d9\u00e7:\u00b9\udb26\ude98</photoUrl><photoUrl></photoUrl><photoUrl>\udb66\udf8e\u008d\u00f8\u00a5\uda81\udc55}</photoUrl><photoUrl>\u0083\udb1e\ude26\u00d0</photoUrl><photoUrl>\udb83\ude5d\ud8c5\udf15\u00d6\udb03\ude63*\u00f9\ud925\udfc6n\u009c</photoUrl><photoUrl>i;\u00ef\u00fa\u0085\u008a\u00e8</photoUrl><photoUrl>\u00f8\u0097</photoUrl></photoUrls></Pet>' https://petstore.swagger.io/v2/pet\n\n\u26a0\ufe0f  Request body contains non-printable characters. Actual value: b'<Pet><element></element><__o_____Q_>null</__o_____Q_><__o_____Q_>4294967296</__o_____Q_><__o_____Q_>-0.18027469278384764</__o_____Q_><__o_____Q_>1.0286568015378372e-306</__o_____Q_><__o_____Q_></__o_____Q_><_______un__><_Go></_Go><___h>true</___h><__><x_0>8.182183346681866e-289</x_0><element>\\xc3\\xb4</element><_s__>null</_s__></__></_______un__><x_1_4____Q></x_1_4____Q><f____>true</f____><id>-242263767243</id><name>\\xc3\\xael</name><status>__not_in_enum__</status><photoUrls><photoUrl>\\xf0\\x9b\\xab\\xa2d\\xc3\\x8e\\xf0\\xa2\\xab\\x82</photoUrl><photoUrl>\\xc3\\xb8\\xc2\\x82)\\x7f\\xc3\\xb5\\xf1\\x87\\xa1\\xa0)\\xc3\\x8a\\xc3\\xa4\\xc3\\x9d</photoUrl><photoUrl></photoUrl><photoUrl>\\xc3\\xbd\\xc2\\x98\\xc2\\x8e\\xc3\\xbf\\xc3\\x85</photoUrl><photoUrl></photoUrl><photoUrl>x\\xc3\\xaee\\xc3\\x8c\\xc2\\xb1\\xc3\\x99\\xc3\\xa7:\\xc2\\xb9\\xf3\\x99\\xaa\\x98</photoUrl><photoUrl></photoUrl><photoUrl>\\xf3\\xa9\\xae\\x8e\\xc2\\x8d\\xc3\\xb8\\xc2\\xa5\\xf2\\xb0\\x91\\x95}</photoUrl><photoUrl>\\xc2\\x83\\xf3\\x97\\xa8\\xa6\\xc3\\x90</photoUrl><photoUrl>\\xf3\\xb0\\xb9\\x9d\\xf1\\x81\\x9c\\x95\\xc3\\x96\\xf3\\x90\\xb9\\xa3*\\xc3\\xb9\\xf1\\x99\\x9f\\x86n\\xc2\\x9c</photoUrl><photoUrl>i;\\xc3\\xaf\\xc3\\xba\\xc2\\x85\\xc2\\x8a\\xc3\\xa8</photoUrl><photoUrl>\\xc3\\xb8\\xc2\\x97</photoUrl></photoUrls></Pet>'",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=sold",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByStatus",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "JpMYUP"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:12:51 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[{\"id\":112233,\"category\":{\"id\":30,\"name\":\"Eq-dog\"},\"name\":\"Unicorn\",\"photoUrls\":[\"URLLink\"],\"tags\":[{\"id\":10,\"name\":\"Doberman\"}],\"status\":\"available\"},{\"id\":9223372016900037475,\"category\":{\"id\":0},\"name\":\"\\uDB30\\uDDB7\\u00195i+\\uD9D8\\uDEB1m\\u0000s\u0093\u00df\u00ff\\u001B9\u00d8\\uD936\\uDFA3\u00b6\u00ca\",\"photoUrls\":[\"\\u0015B\",\"\",\"\u00d1\u00f2\",\"\u00e8$\\uD86B\\uDF717M\u008d\u0092s\u00d6\",\"\\uD9AB\\uDF815\u009c\u00cf\",\"\",\"\u00dctd\u009c\u00fc/J\u007fn\\uD9BA\\uDC38p\u00dcxv\\uDB6A\\uDDF5\u009d+\\uD9E1\\uDC08\u00b2\u00a9\\uDBA1\\uDE0C=\u55b7\\\\\\uD8A2\\uDCD8\u00d5s0\\t.\u00ea\u00bd\u00c5c\\uD88B\\uDF09\\uD8C7\\uDC02\u00a5\u00e7\",\"{\u00fed\\u0015\u00ea\u00dc\\uDA0F\\uDD3E\\uD96A\\uDD49.\u00c6\",\"\\u0016\u00f7\u00ee#\",\"\\u0011\u00c3p(\u450d\"],\"tags\":[{\"id\":2718843993,\"name\":\"\"},{\"id\":-18,\"name\":\"\u00da\u00e2Q\u00e4#\"},{\"id\":0},{\"id\":18815,\"name\":\"\u00aa\"},{\"id\":0},{\"id\":448,\"name\":\"\"},{\"id\":0},{\"id\":-293,\"name\":\"\u00b1?\u00aam\"},{\"id\":0,\"name\":\"\"},{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900037481,\"category\":{\"id\":0},\"name\":\"\\uDB30\\uDDB7\\u00195i+\\uD9D8\\uDEB1m\\u0000s\u0093\u00df\u00ff\\u001B9\u00d8\\uD936\\uDFA3\u00b6\u00ca\",\"photoUrls\":[\"\\u0015B\",\"\",\"\u00d1\u00f2\",\"\u00e8$\\uD86B\\uDF717M\u008d\u0092s\u00d6\",\"\\uD9AB\\uDF815\u009c\u00cf\",\"\",\"\u00dctd\u009c\u00fc/J\u007fn\\uD9BA\\uDC38p\u00dcxv\\uDB6A\\uDDF5\u009d+\\uD9E1\\uDC08\u00b2\u00a9\\uDBA1\\uDE0C=\u55b7\\\\\\uD8A2\\uDCD8\u00d5s0\\t.\u00ea\u00bd\u00c5c\\uD88B\\uDF09\\uD8C7\\uDC02\u00a5\u00e7\",\"{\u00fed\\u0015\u00ea\u00dc\\uDA0F\\uDD3E\\uD96A\\uDD49.\u00c6\",\"\\u0016\u00f7\u00ee#\",\"\\u0011\u00c3p(\u450d\"],\"tags\":[{\"id\":2718843993,\"name\":\"\"},{\"id\":-18,\"name\":\"\u00da\u00e2Q\u00e4#\"},{\"id\":0},{\"id\":18815,\"name\":\"\u00aa\"},{\"id\":0},{\"id\":448,\"name\":\"\"},{\"id\":0},{\"id\":-293,\"name\":\"\u00b1?\u00aam\"},{\"id\":0,\"name\":\"\"},{\"id\":0}],\"status\":\"available\"},{\"id\":9223372016900037499,\"name\":\"+B\\uDBD3\\uDD87\u00f7\\uD944\\uDEFA\",\"photoUrls\":[\"\\uDBE9\\uDDB4\",\"\\u0000\\uD87E\\uDF50\\uDBD1\\uDDE8\u0091\u00ad\",\"\",\"\\uD849\\uDFED\u00ad\",\"\u00c8\",\"<\",\"\",\"M\u00ec\",\"F\u009eq\u0093\u00ae\u00fb\\uD8D7\\uDDB6p\\uDBBF\\uDE4C\u00d3g\\f\\uD972\\uDF87\u008d\\uD84F\\uDC5Be\\uDB1A\\uDFE9=\"],\"tags\":[],\"status\":\"available\"}]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.000965600018389523,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByStatus",
+      "path_parameters": {},
+      "query": {
+        "status": [
+          "available",
+          "sold",
+          "sold"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/9223372016900037499",
+      "url_template": "https://petstore.swagger.io/v2/pet/{petId}",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "api_key": "[Filtered]",
+        "X-Schemathesis-TestCaseId": "S0p0gj"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:12:51 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"id\":9223372016900037499,\"name\":\"+B\\uDBD3\\uDD87\u00f7\\uD944\\uDEFA\",\"photoUrls\":[\"\\uDBE9\\uDDB4\",\"\\u0000\\uD87E\\uDF50\\uDBD1\\uDDE8\u0091\u00ad\",\"\",\"\\uD849\\uDFED\u00ad\",\"\u00c8\",\"<\",\"\",\"M\u00ec\",\"F\u009eq\u0093\u00ae\u00fb\\uD8D7\\uDDB6p\\uDBBF\\uDE4C\u00d3g\\f\\uD972\\uDF87\u008d\\uD84F\\uDC5Be\\uDB1A\\uDFE9=\"],\"tags\":[],\"status\":\"available\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByStatus -> [200] GetPet -> GET /pet/{petId}",
+        "parameters": {
+          "path.petId": "$response.body#/*/id"
+        }
+      },
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.00408480002079159,
+          "mode": "positive"
+        },
+        "components": {
+          "HEADER": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/{petId}",
+      "path_parameters": {
+        "petId": 9223372016900037499
+      },
+      "query": {},
+      "case_headers": {
+        "api_key": "[Filtered]"
+      },
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": 0
+    },
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "TcNChy",
+        "Content-Type": "application/xml",
+        "Content-Length": "858"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:12:52 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"id\":9223372016900037500,\"name\":\"\u00eel\",\"photoUrls\":[\"\\uD82E\\uDEE2d\u00ce\\uD84A\\uDEC2\",\"\u00f8\u0082)\u007f\u00f5\\uD8DE\\uDC60)\u00ca\u00e4\u00dd\",\"\",\"\u00fd\u0098\u008e\u00ff\u00c5\",\"\",\"x\u00eee\u00cc\u00b1\u00d9\u00e7:\u00b9\\uDB26\\uDE98\",\"\",\"\\uDB66\\uDF8E\u008d\u00f8\u00a5\\uDA81\\uDC55}\",\"\u0083\\uDB1E\\uDE26\u00d0\",\"\\uDB83\\uDE5D\\uD8C5\\uDF15\u00d6\\uDB03\\uDE63*\u00f9\\uD925\\uDFC6n\u009c\",\"i;\u00ef\u00fa\u0085\u008a\u00e8\",\"\u00f8\u0097\"],\"tags\":[],\"status\":\"__not_in_enum__\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/{petId} -> [200] PutPet -> PUT /pet",
+        "parameters": {},
+        "requestBody": {
+          "id": "$response.body#/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "negative_data_rejection",
+          "status": "failure",
+          "message": "API accepted schema-violating request\n\nInvalid data should have been rejected\nExpected: 400, 401, 403, 404, 405, 406, 409, 415, 422, 428, 429, 5xx\nInvalid component: in body - violates `enum` at /$ref/schema4/properties/status (was \"sold\", became \"__not_in_enum__\")"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.027258899994194508,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `enum` at /$ref/schema4/properties/status (was \"sold\", became \"__not_in_enum__\")",
+            "location": "/$ref/schema4/properties/status",
+            "parameter": "status",
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "status"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/$ref/schema4/properties/status",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "enum"
+                ],
+                "parameter": "status",
+                "original_value": "sold",
+                "new_value": "__not_in_enum__"
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "": {},
+          "\ud8ca\ude5e\u0088o*\ubfdd\u0083\f\u00d4Q\udaad\udfb6": [
+            [
+              null
+            ],
+            4294967296,
+            [
+              -0.18027469278384764,
+              1.0286568015378372e-306,
+              ""
+            ]
+          ],
+          "^,\u00c8\uda34\udc2c\u00d8\u00c7\ud895\udca1un\u00ce\udb14\ude2e": {
+            "&Go": {},
+            "\ud9c5\ude44\ud811\udd17\u0086h": true,
+            ";\u00c8": {
+              "0": 8.182183346681866e-289,
+              "": "\u00f4",
+              "\ud97c\udd85s\u00ad\u009a": null
+            }
+          },
+          "\u00bc\u0012\u001e\u0097\udb06\udc71Q": {},
+          "f\u00cd\u001e\u00ad\u00cc": true,
+          "id": -242263767243,
+          "name": "\u0016\u00ee\u0016l\u0012",
+          "status": "__not_in_enum__",
+          "photoUrls": [
+            "\ud82e\udee2d\u0019\u00ce\ud84a\udec2",
+            "\u00f8\u0082)\u007f\u00f5\ud8de\udc60)\u00ca\u0013\u00e4\u00dd",
+            "",
+            "\u00fd\u0098\u008e\u00ff\u00c5",
+            "",
+            "\u0001\u0016x\u00eee\u00cc\u00b1\u00d9\u00e7:\u00b9\udb26\ude98",
+            "",
+            "\udb66\udf8e\u008d\u00f8\u00a5\uda81\udc55}",
+            "\u0083\u0002\u0007\udb1e\ude26\u00d0",
+            "\udb83\ude5d\u001a\ud8c5\udf15\u00d6\udb03\ude63*\u00f9\ud925\udfc6n\u009c",
+            "i;\u00ef\u00fa\u0085\u008a\u00e8",
+            "\u00f8\u0097"
+          ]
+        }
+      },
+      "media_type": "application/xml",
+      "parent_index": 1
+    }
+  ]
+}

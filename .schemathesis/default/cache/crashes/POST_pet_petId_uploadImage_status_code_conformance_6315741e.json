@@ -1,0 +1,169 @@
+{
+  "operation": "POST /pet/{petId}/uploadImage",
+  "method": "POST",
+  "path_template": "/pet/{petId}/uploadImage",
+  "fingerprint": "6315741e",
+  "case_id": "JKqMNd",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=pending&status=available&status=pending&status=available&status=available&status=pending&status=pending'\ncurl -X POST -H 'Content-Type: multipart/form-data; boundary=648ebca1693bfcc9f3b12312400c45c1' -d $'--648ebca1693bfcc9f3b12312400c45c1\\r\\nContent-Disposition: form-data; name=\"additionalMetadata\"; filename=\"additionalMetadata\"\\r\\n\\r\\n \ud84f\udf62\\r\\n--648ebca1693bfcc9f3b12312400c45c1--\\r\\n' https://petstore.swagger.io/v2/pet/112233/uploadImage\n\n\u26a0\ufe0f  Request body contains non-printable characters. Actual value: b'--648ebca1693bfcc9f3b12312400c45c1\\r\\nContent-Disposition: form-data; name=\"additionalMetadata\"; filename=\"additionalMetadata\"\\r\\n\\r\\n \\xf0\\xa3\\xbd\\xa2\\r\\n--648ebca1693bfcc9f3b12312400c45c1--\\r\\n'",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=sold&status=pending&status=available&status=pending&status=available&status=available&status=pending&status=pending",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByStatus",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "VnafwW"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:11:59 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[{\"id\":112233,\"category\":{\"id\":30,\"name\":\"Eq-dog\"},\"name\":\"Unicorn\",\"photoUrls\":[\"URLLink\"],\"tags\":[{\"id\":10,\"name\":\"Doberman\"}],\"status\":\"available\"},{\"id\":9223372016900037371,\"name\":\"if why essence\",\"photoUrls\":[],\"tags\":[],\"status\":\"available\"}]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0014722999185323715,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByStatus",
+      "path_parameters": {},
+      "query": {
+        "status": [
+          "available",
+          "sold",
+          "pending",
+          "available",
+          "pending",
+          "available",
+          "available",
+          "pending",
+          "pending"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/pet/112233/uploadImage",
+      "url_template": "https://petstore.swagger.io/v2/pet/{petId}/uploadImage",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "JKqMNd",
+        "Content-Length": "173",
+        "Content-Type": "multipart/form-data; boundary=6bdb970b1b996c9d970a3da63f408bfc"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:11:59 GMT",
+          "content-type": "text/html; charset=ISO-8859-1",
+          "content-length": "333",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "cache-control": "must-revalidate,no-cache,no-store",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n<title>Error 500 Internal Server Error</title>\n</head>\n<body><h2>HTTP ERROR 500</h2>\n<p>Problem accessing /v2/pet/112233/uploadImage. Reason:\n<pre>    Internal Server Error</pre></p><hr><i><small>Powered by Jetty://</small></i><hr/>\n\n</body>\n</html>\n"
+      },
+      "link": {
+        "operationId": "GET /pet/findByStatus -> [200] PostPet -> POST /pet/{petId}/uploadImage",
+        "parameters": {
+          "path.petId": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 500\nDocumented: 200"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.004393600043840706,
+          "mode": "positive"
+        },
+        "components": {
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/{petId}/uploadImage",
+      "path_parameters": {
+        "petId": 112233
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "additionalMetadata": " \ud84f\udf62"
+        }
+      },
+      "media_type": "multipart/form-data",
+      "parent_index": 0
+    }
+  ]
+}

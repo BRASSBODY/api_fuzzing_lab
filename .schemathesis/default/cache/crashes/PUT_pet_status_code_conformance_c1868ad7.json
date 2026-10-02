@@ -1,0 +1,88 @@
+{
+  "operation": "PUT /pet",
+  "method": "PUT",
+  "path_template": "/pet",
+  "fingerprint": "c1868ad7",
+  "case_id": "vKveQO",
+  "code_sample": "curl -X PUT -H 'Content-Type: application/xml' -d '<Pet><name>doggie</name><id>0</id><Category></Category><photoUrls></photoUrls><tags></tags><status>sold</status></Pet>' https://petstore.swagger.io/v2/pet",
+  "sequence": [
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "vKveQO",
+        "Content-Type": "application/xml",
+        "Content-Length": "118"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:08:07 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"id\":9223372016900037151,\"name\":\"doggie\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 200\nDocumented: 400, 404, 405"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.0003966001095250249,
+          "mode": "positive"
+        },
+        "components": {},
+        "phase": {
+          "name": "examples",
+          "data": {
+            "type": "ExamplesPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "name": "doggie",
+          "id": 0,
+          "category": {},
+          "photoUrls": [],
+          "tags": [],
+          "status": "sold"
+        }
+      },
+      "media_type": "application/xml",
+      "parent_index": null
+    }
+  ]
+}

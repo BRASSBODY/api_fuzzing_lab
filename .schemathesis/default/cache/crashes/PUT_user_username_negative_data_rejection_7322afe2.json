@@ -1,0 +1,219 @@
+{
+  "operation": "PUT /user/{username}",
+  "method": "PUT",
+  "path_template": "/user/{username}",
+  "fingerprint": "7322afe2",
+  "case_id": "Mw9p4K",
+  "code_sample": "curl -X POST -H 'Content-Type: application/json' -d '{\"username\": \"\\n\\u0005\", \"id\": -1396241}' https://petstore.swagger.io/v2/user\ncurl -X PUT -H 'Content-Type: application/json' -d '{\"K\\u00fe\\ud842\\udda1\\u00b8\\u00ba\\u00fa3\": [[-63360558318, \"Scunthorpe\"], -2.453855041430995e-71, true], \"\\udb74\\udd61\\u0012\": {}, \"yX%]\": [[], []], \"J\": [null, \"\\f\\u00bc\\u008c\\u00b2ZV\\u00f9\"], \"\\u00ab\\u0096a\\u00dd\": {}, \"id\": -1396241, \"username\": -1396241}' https://petstore.swagger.io/v2/user/-1396241",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/user",
+      "url_template": "https://petstore.swagger.io/v2/user",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "lcQ1jx",
+        "Content-Type": "application/json",
+        "Content-Length": "40"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:09:53 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"9223372036854775807\"}"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0077191999880596995,
+          "mode": "positive"
+        },
+        "components": {
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [
+          {
+            "location": "body",
+            "parameter_name": "id",
+            "resource_name": "User",
+            "resource_field": "id",
+            "source_operation": "POST /user",
+            "source_status": 200
+          },
+          {
+            "location": "body",
+            "parameter_name": "username",
+            "resource_name": "User",
+            "resource_field": "username",
+            "source_operation": "POST /user",
+            "source_status": 200
+          }
+        ],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "username": "\n\u0005",
+          "id": -1396241
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    },
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/user/-1396241",
+      "url_template": "https://petstore.swagger.io/v2/user/{username}",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "Mw9p4K",
+        "Content-Type": "application/json",
+        "Content-Length": "258"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:09:54 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"9223372036854775807\"}"
+      },
+      "link": {
+        "operationId": "POST /user -> [default] PutUser -> PUT /user/{username}",
+        "parameters": {
+          "path.username": "$request.body#/id"
+        },
+        "requestBody": {
+          "id": "$request.body#/id",
+          "username": "$request.body#/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "negative_data_rejection",
+          "status": "failure",
+          "message": "API accepted schema-violating request\n\nInvalid data should have been rejected\nExpected: 400, 401, 403, 404, 405, 406, 409, 415, 422, 428, 429, 5xx\nInvalid component: positive test case"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.02240749995689839,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [
+          {
+            "location": "body",
+            "parameter_name": "id",
+            "resource_name": "User",
+            "resource_field": "id",
+            "source_operation": "POST /user",
+            "source_status": 200
+          },
+          {
+            "location": "body",
+            "parameter_name": "username",
+            "resource_name": "User",
+            "resource_field": "username",
+            "source_operation": "POST /user",
+            "source_status": 200
+          }
+        ],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/{username}",
+      "path_parameters": {
+        "username": -1396241
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "K\u00fe\ud842\udda1\u00b8\u00ba\u00fa3": [
+            [
+              -63360558318,
+              "Scunthorpe"
+            ],
+            -2.453855041430995e-71,
+            true
+          ],
+          "\udb74\udd61\u0012": {},
+          "yX%]": [
+            [],
+            []
+          ],
+          "J": [
+            null,
+            "\f\u00bc\u008c\u00b2ZV\u00f9"
+          ],
+          "\u00ab\u0096a\u00dd": {},
+          "id": -1396241,
+          "username": -1396241
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "operation": "POST /user/createWithList",
+  "method": "POST",
+  "path_template": "/user/createWithList",
+  "fingerprint": "26ea4db8",
+  "case_id": "MjM8r5",
+  "code_sample": "curl -X POST -H 'Content-Type: application/json' -d '{\"\\u0019\\u00c3\\u00e2\\u00059{\": {\"m\\u00cd,\\u00a5\": -133, \"\\u00b96\\u00bd\\u00caA\\uda3a\\ude9a\\u0083\\u008d\": {}, \"PV\": {}}, \"__proto__\": [], \"userStatus\": -571}' https://petstore.swagger.io/v2/user\ncurl -X POST -H 'Content-Type: application/json' -d '[{\"\": {\"\\u0000\\u00ca\\u00cc\\u00d6y\": null, \"\\u00e5>\": false}, \"\\u009a\": \"\", \"\\u009e\\u00ac\\u008d\\ud984\\udd5c\\u00b9\": {\"\\ud934\\udf57G\\u00ca\\u00b1;L\\uda72\\ude48\\u00a3ea\\u00eb\": 5.649842523627663e+16, \"\": [-4612], \"\\ud8c6\\udf18\": -827448053252138714111754914234368}, \"!\": [{\"\\u00ed\\u00ca/9n\\u00cby\\u00b8\": [false, null, true], \"\": [], \"\\u0086Q\\u00f4I\": {}}], \"\\u00c4\\uda19\\uddf6}\\u0018\\u00c0\\u000ea\\u0098\\u00fd\\u00b5\\u00f8u\": {}, \"email\": \"\\u00a1l\\u00d0\\u00eeE\\udb02\\ude4e\\r\\u00d5\\u00e1\\u009e|\\udb8c\\udc79]\\u00eb\\udadc\\udd06\\u00e9\\u001esz\\u0085\\u0010C\", \"id\": -904931866903, \"password\": \"~l4\", \"firstName\": \"\\u00b6\\u000b\", \"username\": 14084728, \"lastName\": \"\", \"phone\": 3.629241905060828e+16, \"userStatus\": -969008}, {\"\\u0082b\\ud98e\\uddc7\\u00f9\\ud91c\\udd4b3\\u0081.\\udad3\\udf81\\u00a6\\u0080\\u00d2T\": {\"\\u0005\": \"\\udb81\\udd42\\u0090\", \"\\u00d7\\u00e8t\\u0083\\ud92d\\udfd1\\ud873\\udda2\\u001b\": {\"\\u001fv\\u0016\": false}}, \"phone\": -6.151828307067298e+16, \"email\": \"\\u00b9\\udbe0\\ude64\\u00df\\u00d7\\u00db\", \"firstName\": \"\\u00fa\\ud84b\\udf319i-\\u00de\\u00b2\\u00c6`\\u00e1\\u00d3\\u00f7\\u0003\\udba6\\udca7\", \"lastName\": \"\\u00eb\\u00b3\\ud8d3\\udf31\\u0080\\u0013\", \"userStatus\": 178, \"username\": 53322387}, {\"\\u0092\\udbc5\\udcbf.\\u00bdd\\u00ed\": true, \"\\u00b2\\udac6\\udfbcM=\\u0084<\\u00a5\\u00f9 \": {\"\\u00e6.\": \"\"}, \"\\uda5f\\uddad\\u00be\\ud834\\udc63\\u00a2c<\\u008cL\\u00ea\\u00b6j\\u001d.\": [], \"FALSE\": false, \"id\": -9223372036854775807, \"firstName\": \"\", \"password\": \"\\ud97d\\udef8\\u00aaew\\ud8ae\\udc72\\u00c4\\u00ba\\u00f14\\u00ae\\u00b4\\u0085\\u00ca`\", \"username\": 6355318208666, \"lastName\": \"\", \"phone\": 4.382320006435221e+16}, {\"password\": \"\", \"phone\": 1.1125369292536007e-308, \"id\": 127, \"userStatus\": -2147483648, \"firstName\": \"\\ufb36\\u00e0\\u00a2\", \"email\": \"\\u00e9\\u00cf\\u00c5$\", \"username\": 2644755, \"lastName\": \"-\"}, {\"K\\u00f5\\f\\u0002*x\\u00ea\\udb4a\\udf8f\\u23b6\": [false, [-2.337147143109108e+16]], \"\\uda3d\\udd5d\\ud9dd\\udea6^h\\t\\u001b\": {\"\": []}, \"\\u0093s\": null, \"\\u0087\\u00c4\\u00d2\\u00a1\\ud98c\\udc8cH\\u00d4\\u00ad\": \"\\ud93f\\uddbe\\u00f3\", \"\\u00d2\\u00fc\": {\"5\\u00b4\\u00c5\\u0081\\udb12\\udc1e\": \"\\u00c2\", \"\\u0091Qf\\uda91\\udd2d\\u00d5\\ud83a\\udc71\": []}, \"email\": \"Scunthorpe\", \"phone\": -8760299581795361.0, \"username\": 33482516058, \"password\": \"\\udb5e\\udd21\\uda4a\\uded2\", \"lastName\": \"\\u00c0\\ud9c9\\udeff\", \"id\": 148437}, {\"username\": 1925, \"phone\": -3.1751345239244328e+267}, {\"{\\u00db\\udae9\\udc4f~P\\ud927\\udca0\": [5e-324], \"\\\\\\u00da\": {\"Y\\u000e\": null, \"o\\u00d5\\u008d\": null}, \"\\u00cc}\": [], \"\": {\"\\u00ef\\u00e9)\\ud91e\\udd28\\u00c6\\u00fd\\u00a7E\\u00ba\\u001e\\u00e5\\ud94e\\udeb7\\u00db{\\ud80a\\udf54\\u00bc\\u00ec\\u00fd\\u0087\\udb5a\\udea8-\": {\"\\u008aW\\u0015\\udbe1\\ude82\\u00c7|\\u00ddH\": -1.1124434998731674e-116}, \"\\u0006\\u0095\\u0006\\u0086mq\\u00c9\\u009fH\\u0092\\u00e9\": [null]}, \"\\u0084\\uda0c\\ude4dN\": [], \"password\": \"\\ud83c\\uddfa\\ud83c\\uddf8\", \"phone\": 4.469612626921676e+16, \"username\": -171, \"userStatus\": 552961}, {\"\\u00a7\\u0092\\u00d1v\\u00dd\\b\\udb3e\\ude94\": {}, \"phone\": -8.386538418739697e+62, \"username\": 21557}, {\"\": [610, null], \"\\udb78\\udf2f\\u00a7vS\\u009d#\\ud908\\udd52\": [], \"]\\udaa0\\udfd3\": false, \"\\uda1b\\udd10\": {\"\": -21817}, \"`\\ud94b\\udf66\\udb29\\udff3\\t\\u009e\": [8656777614439740.0, {}, {\"\": 2.367550565745927e+16, \"\\u00b3\\u007f\": null}], \"email\": \"\\u00d5\\u0094AO\\udb7e\\udc8b\", \"username\": 3405, \"phone\": -6.892211695913028e+300, \"firstName\": \"\\u0085G\\u0013VH\\u00fbY9\", \"lastName\": \"\\u00d0\\u00b4\\u00cd\"}, {\"B\": [[-694335406919586, \"iM\\u00be\\u00f0\\u00ab0\\u008f\\u00ca\\ud98f\\udd2f\\u00fe\\u00c6\", null]], \"\\u00f6!V\\u00df\": 922, \"\\ud8c9\\udcb2\": {\"\\u00ca\": {\"O\\u000b\\u00b5\\u00d3\\u00a7zG{\": \"\\ud9f7\\udf36\\u0012\"}, \"\\u00d8\": [], \"\": {\"\\u000b\\ud91e\\udd70\\u009b\\u0081\\ud989\\udd16|\\u00a9v\\u00fex\\u00e0\\u00d4\\u001f\": null, \"\\u00f1\\\\\\uda73\\udfb8\\u0083S\\u00a8?\\u0010e\": \"(\"}}, \"\\b_\\u0092\\u009e\\u00e7\\udb9e\\udec9\\u0083\\u00cec\\udbb3\\udfb4\\ud83f\\ude76\": {}, \"\": [{\"\\u00f5\\u00e3\\u0090\\u0080\\u00d7\\u00c6Y\\ud85e\\udfdd\": null, \"\\u00fa\": \"\\udb47\\udfd3Z\\u00b9\\ufb12L\", \"\\u0010\\u00b8\\u001c\\u0003\\udb1c\\uddf0q\\ud883\\uddd3\\u00b6\": 10000000.0}, \"V\\ud8c2\\ude0d\\u00b8\", {}], \"email\": \"[\\ud8b4\\udc1a\", \"userStatus\": -220939, \"phone\": -2.00001, \"lastName\": \"\\u008b\\u0019\\u0001\\ud9dc\\udf3c\\u00c7\", \"firstName\": \"S\", \"id\": 479001600, \"username\": 3657, \"password\": \"\\u0086\\ud828\\ude5d\\u001cu\\u00f0\\ud97b\\udf77\"}, {\"@\": null, \"username\": 341, \"phone\": -8.304689610849906e+276, \"password\": \"\\uda33\\udea4b\"}]' https://petstore.swagger.io/v2/user/createWithList",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/user",
+      "url_template": "https://petstore.swagger.io/v2/user",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "LEYAlg",
+        "Content-Type": "application/json",
+        "Content-Length": "155"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:22:59 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"0\"}"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.016259800060652196,
+          "mode": "positive"
+        },
+        "components": {
+          "BODY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "\u0019\u00c3\u00e2\u00059{": {
+            "m\u00cd,\u00a5": -133,
+            "\u00b96\u00bd\u00caA\uda3a\ude9a\u0083\u008d": {},
+            "PV": {}
+          },
+          "__proto__": [],
+          "userStatus": -571
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/user/createWithList",
+      "url_template": "https://petstore.swagger.io/v2/user/createWithList",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "MjM8r5",
+        "Content-Type": "application/json",
+        "Content-Length": "4324"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:23:00 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":200,\"type\":\"unknown\",\"message\":\"ok\"}"
+      },
+      "link": {
+        "operationId": "POST /user -> [default] PostUser -> POST /user/createWithList",
+        "parameters": {},
+        "requestBody": [
+          "$request.body#/id"
+        ]
+      },
+      "checks": [
+        {
+          "name": "negative_data_rejection",
+          "status": "failure",
+          "message": "API accepted schema-violating request\n\nInvalid data should have been rejected\nExpected: 400, 401, 403, 404, 405, 406, 409, 415, 422, 428, 429, 5xx\nInvalid component: in body\n  - violates `type` at /items/properties/phone (was string, became number)\n  - violates `type` at /items/properties/username (was string, became integer)"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.1512309000827372,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "- violates `type` at /items/properties/phone (was string, became number)\n- violates `type` at /items/properties/username (was string, became integer)",
+            "location": null,
+            "parameter": null,
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "phone"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/items/properties/phone",
+                "channel": "schema",
+                "operator": "change_type",
+                "keywords": [
+                  "type"
+                ],
+                "parameter": "phone",
+                "original_value": "string",
+                "new_value": "number"
+              },
+              {
+                "path": [
+                  "username"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/items/properties/username",
+                "channel": "schema",
+                "operator": "change_type",
+                "keywords": [
+                  "type"
+                ],
+                "parameter": "username",
+                "original_value": "string",
+                "new_value": "integer"
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/user/createWithList",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": [
+          {
+            "": {
+              "\u0000\u00ca\u00cc\u00d6y": null,
+              "\u00e5>": false
+            },
+            "\u009a": "",
+            "\u009e\u00ac\u008d\ud984\udd5c\u00b9": {
+              "\ud934\udf57G\u00ca\u00b1;L\uda72\ude48\u00a3ea\u00eb": 5.649842523627663e+16,
+              "": [
+                -4612
+              ],
+              "\ud8c6\udf18": -827448053252138714111754914234368
+            },
+            "!": [
+              {
+                "\u00ed\u00ca/9n\u00cby\u00b8": [
+                  false,
+                  null,
+                  true
+                ],
+                "": [],
+                "\u0086Q\u00f4I": {}
+              }
+            ],
+            "\u00c4\uda19\uddf6}\u0018\u00c0\u000ea\u0098\u00fd\u00b5\u00f8u": {},
+            "email": "\u00a1l\u00d0\u00eeE\udb02\ude4e\r\u00d5\u00e1\u009e|\udb8c\udc79]\u00eb\udadc\udd06\u00e9\u001esz\u0085\u0010C",
+            "id": -904931866903,
+            "password": "[Filtered]",
+            "firstName": "\u00b6\u000b",
+            "username": 14084728,
+            "lastName": "",
+            "phone": 3.629241905060828e+16,
+            "userStatus": -969008
+          },
+          {
+            "\u0082b\ud98e\uddc7\u00f9\ud91c\udd4b3\u0081.\udad3\udf81\u00a6\u0080\u00d2T": {
+              "\u0005": "\udb81\udd42\u0090",
+              "\u00d7\u00e8t\u0083\ud92d\udfd1\ud873\udda2\u001b": {
+                "\u001fv\u0016": false
+              }
+            },
+            "phone": -6.151828307067298e+16,
+            "email": "\u00b9\udbe0\ude64\u00df\u00d7\u00db",
+            "firstName": "\u00fa\ud84b\udf319i-\u00de\u00b2\u00c6`\u00e1\u00d3\u00f7\u0003\udba6\udca7",
+            "lastName": "\u00eb\u00b3\ud8d3\udf31\u0080\u0013",
+            "userStatus": 178,
+            "username": 53322387
+          },
+          {
+            "\u0092\udbc5\udcbf.\u00bdd\u00ed": true,
+            "\u00b2\udac6\udfbcM=\u0084<\u00a5\u00f9 ": {
+              "\u00e6.": ""
+            },
+            "\uda5f\uddad\u00be\ud834\udc63\u00a2c<\u008cL\u00ea\u00b6j\u001d.": [],
+            "FALSE": false,
+            "id": -9223372036854775807,
+            "firstName": "",
+            "password": "[Filtered]",
+            "username": 6355318208666,
+            "lastName": "",
+            "phone": 4.382320006435221e+16
+          },
+          {
+            "password": "[Filtered]",
+            "phone": 1.1125369292536007e-308,
+            "id": 127,
+            "userStatus": -2147483648,
+            "firstName": "\ufb36\u00e0\u00a2",
+            "email": "\u00e9\u00cf\u00c5$",
+            "username": 2644755,
+            "lastName": "-"
+          },
+          {
+            "K\u00f5\f\u0002*x\u00ea\udb4a\udf8f\u23b6": [
+              false,
+              [
+                -2.337147143109108e+16
+              ]
+            ],
+            "\uda3d\udd5d\ud9dd\udea6^h\t\u001b": {
+              "": []
+            },
+            "\u0093s": null,
+            "\u0087\u00c4\u00d2\u00a1\ud98c\udc8cH\u00d4\u00ad": "\ud93f\uddbe\u00f3",
+            "\u00d2\u00fc": {
+              "5\u00b4\u00c5\u0081\udb12\udc1e": "\u00c2",
+              "\u0091Qf\uda91\udd2d\u00d5\ud83a\udc71": []
+            },
+            "email": "Scunthorpe",
+            "phone": -8760299581795361.0,
+            "username": 33482516058,
+            "password": "[Filtered]",
+            "lastName": "\u00c0\ud9c9\udeff",
+            "id": 148437
+          },
+          {
+            "username": 1925,
+            "phone": -3.1751345239244328e+267
+          },
+          {
+            "{\u00db\udae9\udc4f~P\ud927\udca0": [
+              5e-324
+            ],
+            "\\\u00da": {
+              "Y\u000e": null,
+              "o\u00d5\u008d": null
+            },
+            "\u00cc}": [],
+            "": {
+              "\u00ef\u00e9)\ud91e\udd28\u00c6\u00fd\u00a7E\u00ba\u001e\u00e5\ud94e\udeb7\u00db{\ud80a\udf54\u00bc\u00ec\u00fd\u0087\udb5a\udea8-": {
+                "\u008aW\u0015\udbe1\ude82\u00c7|\u00ddH": -1.1124434998731674e-116
+              },
+              "\u0006\u0095\u0006\u0086mq\u00c9\u009fH\u0092\u00e9": [
+                null
+              ]
+            },
+            "\u0084\uda0c\ude4dN": [],
+            "password": "[Filtered]",
+            "phone": 4.469612626921676e+16,
+            "username": -171,
+            "userStatus": 552961
+          },
+          {
+            "\u00a7\u0092\u00d1v\u00dd\b\udb3e\ude94": {},
+            "phone": -8.386538418739697e+62,
+            "username": 21557
+          },
+          {
+            "": [
+              610,
+              null
+            ],
+            "\udb78\udf2f\u00a7vS\u009d#\ud908\udd52": [],
+            "]\udaa0\udfd3": false,
+            "\uda1b\udd10": {
+              "": -21817
+            },
+            "`\ud94b\udf66\udb29\udff3\t\u009e": [
+              8656777614439740.0,
+              {},
+              {
+                "": 2.367550565745927e+16,
+                "\u00b3\u007f": null
+              }
+            ],
+            "email": "\u00d5\u0094AO\udb7e\udc8b",
+            "username": 3405,
+            "phone": -6.892211695913028e+300,
+            "firstName": "\u0085G\u0013VH\u00fbY9",
+            "lastName": "\u00d0\u00b4\u00cd"
+          },
+          {
+            "B": [
+              [
+                -694335406919586,
+                "iM\u00be\u00f0\u00ab0\u008f\u00ca\ud98f\udd2f\u00fe\u00c6",
+                null
+              ]
+            ],
+            "\u00f6!V\u00df": 922,
+            "\ud8c9\udcb2": {
+              "\u00ca": {
+                "O\u000b\u00b5\u00d3\u00a7zG{": "\ud9f7\udf36\u0012"
+              },
+              "\u00d8": [],
+              "": {
+                "\u000b\ud91e\udd70\u009b\u0081\ud989\udd16|\u00a9v\u00fex\u00e0\u00d4\u001f": null,
+                "\u00f1\\\uda73\udfb8\u0083S\u00a8?\u0010e": "("
+              }
+            },
+            "\b_\u0092\u009e\u00e7\udb9e\udec9\u0083\u00cec\udbb3\udfb4\ud83f\ude76": {},
+            "": [
+              {
+                "\u00f5\u00e3\u0090\u0080\u00d7\u00c6Y\ud85e\udfdd": null,
+                "\u00fa": "\udb47\udfd3Z\u00b9\ufb12L",
+                "\u0010\u00b8\u001c\u0003\udb1c\uddf0q\ud883\uddd3\u00b6": 10000000.0
+              },
+              "V\ud8c2\ude0d\u00b8",
+              {}
+            ],
+            "email": "[\ud8b4\udc1a",
+            "userStatus": -220939,
+            "phone": -2.00001,
+            "lastName": "\u008b\u0019\u0001\ud9dc\udf3c\u00c7",
+            "firstName": "S",
+            "id": 479001600,
+            "username": 3657,
+            "password": "[Filtered]"
+          },
+          {
+            "@": null,
+            "username": 341,
+            "phone": -8.304689610849906e+276,
+            "password": "[Filtered]"
+          }
+        ]
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

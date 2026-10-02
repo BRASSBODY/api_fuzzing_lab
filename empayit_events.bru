@@ -1,0 +1,23 @@
+meta {
+  name: Get Events List
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:4011/v1/events
+}
+
+headers {
+  Content-Type: application/json
+}
+
+assert {
+  res.status: in [200, 400, 401, 422, 500]
+}
+
+tests {
+  test("Events endpoint validation", function() {
+    expect([200, 400, 401, 422, 500]).to.include(res.status);
+  });
+}

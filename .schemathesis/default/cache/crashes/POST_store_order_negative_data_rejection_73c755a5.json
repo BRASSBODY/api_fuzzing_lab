@@ -1,0 +1,130 @@
+{
+  "operation": "POST /store/order",
+  "method": "POST",
+  "path_template": "/store/order",
+  "fingerprint": "73c755a5",
+  "case_id": "ftCZme",
+  "code_sample": "curl -X POST -H 'Content-Type: application/json' -d '{\"#\\u00f0\": {\"\\u008e\\udb6e\\uddfd\\u0088\\u008fE\\u0093\\u00f0\\u0014w\\udbd1\\udf7bk\": null, \"`\": \"\\u0007\\u00c4\\u00a9)SR\\udb05\\udd8a\", \"\\u0080\\ud8d3\\udf96F]\\u0014\": false}, \"\": {\"\\u00ea\\u00b67X\\\\6\\u00d4\": \"\\udbed\\udca2\\ub822\\u0005\\u0082\\udb88\\ude5cF\\uda77\\ude1d\\udae1\\udfffY\"}, \"\\udab2\\udf71J\\u00aa\\ud80d\\ude24\": {}, \"\\u00fb\": [false, {\"\\udbd8\\udf18\": false}, [-457246382788, true, null]], \"\\u00c5\\u00ea\\u00f8\\u00f1\\b\\u00e4\": [-207640, null, true], \"complete\": true, \"id\": 101599, \"shipDate\": \"2024-01-01T12:99:00Z\", \"quantity\": 154085, \"status\": \"approved\"}' https://petstore.swagger.io/v2/store/order",
+  "sequence": [
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/store/order",
+      "url_template": "https://petstore.swagger.io/v2/store/order",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "ftCZme",
+        "Content-Type": "application/json",
+        "Content-Length": "551"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:19:07 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"id\":101599,\"petId\":0,\"quantity\":154085,\"shipDate\":\"2024-01-01T13:39:00.000+0000\",\"status\":\"approved\",\"complete\":true}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "negative_data_rejection",
+          "status": "failure",
+          "message": "API accepted schema-violating request\n\nInvalid data should have been rejected\nExpected: 400, 401, 403, 404, 405, 406, 409, 415, 422, 428, 429, 5xx\nInvalid component: in body - violates `format:date-time` at /properties/shipDate (was \"0204-06-19T11:00:02+06:44\", became \"2024-01-01T12:99:00Z\")"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.02969760005362332,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `format:date-time` at /properties/shipDate (was \"0204-06-19T11:00:02+06:44\", became \"2024-01-01T12:99:00Z\")",
+            "location": "/properties/shipDate",
+            "parameter": "shipDate",
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "shipDate"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/shipDate",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "format:date-time"
+                ],
+                "parameter": "shipDate",
+                "original_value": "0204-06-19T11:00:02+06:44",
+                "new_value": "2024-01-01T12:99:00Z"
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/store/order",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "#\u00f0": {
+            "\u008e\udb6e\uddfd\u0088\u008fE\u0093\u00f0\u0014w\udbd1\udf7bk": null,
+            "`": "\u0007\u00c4\u00a9)SR\udb05\udd8a",
+            "\u0080\ud8d3\udf96F]\u0014": false
+          },
+          "": {
+            "\u00ea\u00b67X\\6\u00d4": "\udbed\udca2\ub822\u0005\u0082\udb88\ude5cF\uda77\ude1d\udae1\udfffY"
+          },
+          "\udab2\udf71J\u00aa\ud80d\ude24": {},
+          "\u00fb": [
+            false,
+            {
+              "\udbd8\udf18": false
+            },
+            [
+              -457246382788,
+              true,
+              null
+            ]
+          ],
+          "\u00c5\u00ea\u00f8\u00f1\b\u00e4": [
+            -207640,
+            null,
+            true
+          ],
+          "complete": true,
+          "id": 101599,
+          "shipDate": "2024-01-01T12:99:00Z",
+          "quantity": 154085,
+          "status": "approved"
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": null
+    }
+  ]
+}

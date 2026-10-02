@@ -1,0 +1,183 @@
+{
+  "operation": "POST /store/order",
+  "method": "POST",
+  "path_template": "/store/order",
+  "fingerprint": "04f00926",
+  "case_id": "8EMgar",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByTags?tags='\ncurl -X POST -H 'Content-Type: application/json' -d '{\"R\\u00a0\": {}, \"\\u0016\\ud82a\\udc52\\u00d4Y\\u00dc\\u00ad\\udbbf\\ude4d\\u00a4\\u00eb\\ud823\\udc03\\ud918\\udd90\\u00fb\\u00e5 \": {\"\\u00e4\\udb17\\udc6fI\\u00ac\\u00c0\\u001c\\u000e\\u00f6Q\\ud8f0\\uddcb\\u00bfc\\u00bb\\u008b\\udb49\\udf5d\\udafb\\ude9e\\u00b3\\u0010\\ud85a\\udc6a\": \"\\uda40\\udc31\\uda05\\udc99L\\u00969\\\\\\u00e3H\", \"N\\u00bfJ\\u0083\\ud97d\\udc9c\\u00b0\": \"\", \"\\udb47\\udf70\\u008d\\u00ef\\u008e\\u00d7 \\udb64\\udc76\\u00ce\": true}, \"\": [], \"id\": 9223372036854775808, \"quantity\": -268435455}' https://petstore.swagger.io/v2/store/order",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByTags?tags=",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByTags",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "FxDNps"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:10:07 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0013917000032961369,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByTags",
+      "path_parameters": {},
+      "query": {
+        "tags": [
+          ""
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/store/order",
+      "url_template": "https://petstore.swagger.io/v2/store/order",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "8EMgar",
+        "Content-Type": "application/json",
+        "Content-Length": "461"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:10:08 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":500,\"type\":\"unknown\",\"message\":\"something bad happened\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByTags -> [200] PostPet_2 -> POST /store/order",
+        "parameters": {},
+        "requestBody": {
+          "petId": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 500\nDocumented: 200, 400"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.01505899999756366,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `maximum` at /properties/id (was 705, became 9223372036854775808)",
+            "location": "/properties/id",
+            "parameter": "id",
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "id"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/id",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "maximum"
+                ],
+                "parameter": "id",
+                "original_value": 705,
+                "new_value": 9223372036854775808
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/store/order",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "R\u00a0": {},
+          "\u0016\ud82a\udc52\u00d4Y\u00dc\u00ad\udbbf\ude4d\u00a4\u00eb\ud823\udc03\ud918\udd90\u00fb\u00e5 ": {
+            "\u00e4\udb17\udc6fI\u00ac\u00c0\u001c\u000e\u00f6Q\ud8f0\uddcb\u00bfc\u00bb\u008b\udb49\udf5d\udafb\ude9e\u00b3\u0010\ud85a\udc6a": "\uda40\udc31\uda05\udc99L\u00969\\\u00e3H",
+            "N\u00bfJ\u0083\ud97d\udc9c\u00b0": "",
+            "\udb47\udf70\u008d\u00ef\u008e\u00d7 \udb64\udc76\u00ce": true
+          },
+          "": [],
+          "id": 9223372036854775808,
+          "quantity": -268435455
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

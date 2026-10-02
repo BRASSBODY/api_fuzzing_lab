@@ -1,0 +1,210 @@
+{
+  "operation": "POST /pet",
+  "method": "POST",
+  "path_template": "/pet",
+  "fingerprint": "718f1134",
+  "case_id": "ZtOJGB",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=sold&status=available&status=available&status=sold'\ncurl -X POST -H 'Content-Type: application/json' -d '{\"\\u0090\\u00b7I\\ud8ee\\udf53\\u00e9\\udb63\\udd27;\": {}, \"9\\n\\u0004\\u0007\\udac9\\udd90\\ud85d\\udc76\\u0004\\u00eb~\\ud860\\udd7b\\ud9c8\\udf3e\\ud866\\udd28\\ud958\\udedar{1\": {\"\\u0006_\\u00a0\\u00ab\\u001f\\u00a5\": {}, \"\": [], \"J\\u0085\\ud88d\\udc10\\u00fc\": {\"\\u00b4\": {}, \"S0\\udbb5\\ude0a\": \"f8>\\u00be\", \"\\u00d3:\\u001d\\u00c7\\udab0\\udc9f\\ud884\\uddcb\\u008a6\\u0089\\u0000\\u00a7\\ud810\\ude3a\\u00aa\\u00da\\u00e7\\u00a1\\u009b\\u00b7\\u0091\\udabb\\udd1b\\u001f\\u009a)#VpP\\u008d\\u00cc\\u00b3}\\u00f4s\\u00a2\\u00cc\\u009f\\u00ef\": [\"none\", -5.918378394733695e+51, 987126]}}, \"photoUrls\": [\"3>\"]}' https://petstore.swagger.io/v2/pet",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByStatus?status=sold&status=available&status=available&status=sold",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByStatus",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "YA7N16"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:09:19 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[{\"id\":9223372016900036960,\"category\":{\"id\":0,\"name\":\"test\"},\"name\":\"das\",\"photoUrls\":[\"string\"],\"tags\":[{\"id\":0,\"name\":\"das\"}],\"status\":\"sold\"},{\"id\":1,\"category\":{\"id\":1,\"name\":\"cat\"},\"name\":\"dog\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"},{\"id\":9223372016900037151,\"name\":\"doggie\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"},{\"id\":9223372016900037152,\"name\":\"doggie\",\"photoUrls\":[],\"tags\":[],\"status\":\"sold\"}]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0009572999551892281,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByStatus",
+      "path_parameters": {},
+      "query": {
+        "status": [
+          "sold",
+          "available",
+          "available",
+          "sold"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "POST",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "ZtOJGB",
+        "Content-Type": "application/json",
+        "Content-Length": "552"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:09:19 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"id\":9223372016900037167,\"photoUrls\":[\"3>\"],\"tags\":[]}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByStatus -> [200] PostPet_0 -> POST /pet",
+        "parameters": {},
+        "requestBody": {
+          "id": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "negative_data_rejection",
+          "status": "failure",
+          "message": "API accepted schema-violating request\n\nInvalid data should have been rejected\nExpected: 400, 401, 403, 404, 405, 406, 409, 415, 422, 428, 429, 5xx\nInvalid component: in body - violates `required` at /$ref/schema1 (was \"\u00b1\ud95d\uddec\udb22\udcd0\u0092\u00dc\u009a\u0019\u0092\u00b2Y\")"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.03033580002374947,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "violates `required` at /$ref/schema1 (was \"\u00b1\ud95d\uddec\udb22\udcd0\u0092\u00dc\u009a\u0019\u0092\u00b2Y\")",
+            "location": "/$ref/schema1",
+            "parameter": null,
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [],
+                "parameter_location": "body",
+                "schema_pointer": "/$ref/schema1",
+                "channel": "value",
+                "operator": "value_violator",
+                "keywords": [
+                  "required"
+                ],
+                "parameter": null,
+                "original_value": "\u00b1\ud95d\uddec\udb22\udcd0\u0092\u00dc\u009a\u0019\u0092\u00b2Y",
+                "new_value": {
+                  "\u0090\u00b7I\ud8ee\udf53\u00e9\udb63\udd27;": {},
+                  "9\n\u0004\u0007\udac9\udd90\ud85d\udc76\u0004\u00eb~\ud860\udd7b\ud9c8\udf3e\ud866\udd28\ud958\udedar{1": {
+                    "\u0006_\u00a0\u00ab\u001f\u00a5": {},
+                    "": [],
+                    "J\u0085\ud88d\udc10\u00fc": {
+                      "\u00b4": {},
+                      "S0\udbb5\ude0a": "f8>\u00be",
+                      "\u00d3:\u001d\u00c7\udab0\udc9f\ud884\uddcb\u008a6\u0089\u0000\u00a7\ud810\ude3a\u00aa\u00da\u00e7\u00a1\u009b\u00b7\u0091\udabb\udd1b\u001f\u009a)#VpP\u008d\u00cc\u00b3}\u00f4s\u00a2\u00cc\u009f\u00ef": [
+                        "none",
+                        -5.918378394733695e+51,
+                        987126
+                      ]
+                    }
+                  },
+                  "photoUrls": [
+                    "3>"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "\u0090\u00b7I\ud8ee\udf53\u00e9\udb63\udd27;": {},
+          "9\n\u0004\u0007\udac9\udd90\ud85d\udc76\u0004\u00eb~\ud860\udd7b\ud9c8\udf3e\ud866\udd28\ud958\udedar{1": {
+            "\u0006_\u00a0\u00ab\u001f\u00a5": {},
+            "": [],
+            "J\u0085\ud88d\udc10\u00fc": {
+              "\u00b4": {},
+              "S0\udbb5\ude0a": "f8>\u00be",
+              "\u00d3:\u001d\u00c7\udab0\udc9f\ud884\uddcb\u008a6\u0089\u0000\u00a7\ud810\ude3a\u00aa\u00da\u00e7\u00a1\u009b\u00b7\u0091\udabb\udd1b\u001f\u009a)#VpP\u008d\u00cc\u00b3}\u00f4s\u00a2\u00cc\u009f\u00ef": [
+                "none",
+                -5.918378394733695e+51,
+                987126
+              ]
+            }
+          },
+          "photoUrls": [
+            "3>"
+          ]
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

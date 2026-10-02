@@ -1,0 +1,357 @@
+{
+  "operation": "PUT /pet",
+  "method": "PUT",
+  "path_template": "/pet",
+  "fingerprint": "913b8dc8",
+  "case_id": "qNosVz",
+  "code_sample": "curl -X GET 'https://petstore.swagger.io/v2/pet/findByTags?tags=_&tags=%F1%88%96%A0%C2%BA%F0%BB%B0%89o%C2%8D%F3%95%BB%A8rzAf%16U%C3%B9&tags=%C3%83&tags=%C2%ACd%22%F2%A4%84%AD%F2%AE%9A%BE%C3%B2'\ncurl -X PUT -H 'Content-Type: application/json' -d '{\"\\u00a8\\u00dc\\u0004\\udb08\\uddfa\": {}, \"a\\u0001x\\u009a\\udb9b\\udcca\\u007f0\\u00df\\u00ab\": {\"\": [], \"None\": false}, \"category\": {\"\\u00e3\\u00d4\": {\"\\u00d7\\u000e\\u00c2\\\"\": [\"\", \"\\\"\\u0084\", null]}, \"\\u00de\\ud90a\\ude64\\u00e4\\u0010\\ud815\\udcb3\\u0007\\f\\u00c6 \\ud825\\udfca\\u0001&\\u009e\\u00abv\\u00c4%\\ud8f6\\udf77\\ud912\\ude7b\": {\"P\\udbea\\udf20\\u008c=\": {\"\": null}}, \"name\": \"([\\u009c\\u00fb\\udb57\\uddcf\\u00dd\\u0010z\", \"id\": -584}, \"name\": \"\\u0084y\", \"photoUrls\": [\"\\u00cb\", \"B\\u0096@\\u00b3\\ud98e\\udd3b\\u00b5\\u00a1\"], \"tags\": [{\"\": [[true], 2291, -2.0533429636477874e-25], \"X\\u00a1\\n\": 1.9164040365462815e+40, \"j\\u00e9\\u00f9\\u00a8\\u00f6Q+\\uda23\\ude57\\udaa2\\udc09)M\\u00c3\\u008a\\u00dc)\\ued21!\\u0016\\u0003\\u00c3\\u00b6\": null, \"\\u00a4\\ud9fe\\udc0b\\u0011\\udaff\\udc52\": [\"%\"], \"\\u00cd\\u00a7\\b\": [null, \"\\u00bat\\udae9\\udc49\\udaf0\\udfe9\\u0084\"], \"id\": [{\"\\u00c1W\": [\"\\ud880\\udd23y<\\u00e2\\u00ca^\", null, 252330]}], \"name\": -5128702829}, {\"g\\u0005\\u0086t\\u00f0\": [true], \"\\uda42\\udc1a\": {\"\\u00d0\\u0080\\u0011\": \"\\u0003\", \"f\\u00b0\\u007f\\u00ec\\u00ac\": \"\\u007f\", \"%\\udbc0\\udca0\\u00d7_(\": \"\\u0093\"}, \"\": [], \"\\u00fc\": {}, \"\\ud996\\ude73C\\u0090\": {\"\": {}}, \"id\": [[], [], null, 3.402823466e+38, {\"\\u00aa\\uda0d\\udd35'\"'\"'\\b\": \"\"}, -18804798354, {}], \"name\": 8319144164173}, {\"5\\udb46\\udf90[\\u0092\\u00ab\\udb65\\ude89\\u0002\\u001b\\ud972\\uddd9\\ud8c5\\udfa4M\": [true], \"\\u00ba\\ud9c5\\udd75\\u000f+\\uda26\\udc40\\u0083\\ud87c\\udf12\": [877, null, -1.7976931348623157e+308], \"7\\u00ae\\u00a0\": {}, \"\\u001f\\u0085\\u001dt.(\\u00a5\": [], \"\\ud95f\\udc46\": {}, \"name\": 118, \"id\": [[], 6696, [false, 1.9014867351838664e+16], [[]], {\"\\u0094 \\u000f\": \"{\\u00d07\", \"\\ud9da\\udd95\\u009d\\udbac\\udd4c\\ud843\\udd96\\u008fj\\u00c3\\u0017\\udb62\\udeef\\u0013\\u00ea'\"'\"'\\udbb2\\udcfc\\udb13\\udc43\\ud945\\udf3cq~\": true, \"\\u00d0z\\u008b\\ud829\\udd59\\ud988\\ude73\": -1.1}]}, {\"\": {\"\": false}, \"\\u00fe\\u00b3k\\u009b\\u001e\": {\"S\\u00a2\\rG\\uda6b\\udcdc\\u00e7\\u0089\\u00e2\\udb04\\udcc7\\u00d2\\u00cb\\ud9b2\\udc70\\ud93e\\uddca\\u00b4\\udb9c\\udd15\\udb48\\uddf8\\u00c2\\u00d7\\u0011\\u00d7\\u00d4\": [4.1732182231414296e+16]}, \"\\u00b6\\u00fc\\u00b7\\u00b0\": [false, -1075, true], \"5\\udb88\\ude5e\\u00d7\\u0011\\u00b3S\\u00e4\\udadf\\ude54\\ud9c0\\udd75\\uda02\\udd17S\\u00cey\\u00b2\\u0000\\u00a0\\u00e1\\u001a\": [null], \"8;\": {}, \"name\": 2269516, \"id\": [{\"\\u00a1\\u0085\": {\"\\ud835\\udc13\\ud835\\udc21\\ud835\\udc1e \\ud835\\udc2a\\ud835\\udc2e\\ud835\\udc22\\ud835\\udc1c\\ud835\\udc24 \\ud835\\udc1b\\ud835\\udc2b\\ud835\\udc28\\ud835\\udc30\\ud835\\udc27 \\ud835\\udc1f\\ud835\\udc28\\ud835\\udc31 \\ud835\\udc23\\ud835\\udc2e\\ud835\\udc26\\ud835\\udc29\\ud835\\udc2c \\ud835\\udc28\\ud835\\udc2f\\ud835\\udc1e\\ud835\\udc2b \\ud835\\udc2d\\ud835\\udc21\\ud835\\udc1e \\ud835\\udc25\\ud835\\udc1a\\ud835\\udc33\\ud835\\udc32 \\ud835\\udc1d\\ud835\\udc28\\ud835\\udc20\": [-5.3223664645634675e+69, \"\\u00d2\", false]}}, {}, {}]}], \"id\": -389827257183631310848, \"status\": \"available\"}' https://petstore.swagger.io/v2/pet",
+  "sequence": [
+    {
+      "method": "GET",
+      "url": "https://petstore.swagger.io/v2/pet/findByTags?tags=_&tags=%F1%88%96%A0%C2%BA%F0%BB%B0%89o%C2%8D%F3%95%BB%A8rzAf%16U%C3%B9&tags=%C3%83&tags=%C2%ACd%22%F2%A4%84%AD%F2%AE%9A%BE%C3%B2",
+      "url_template": "https://petstore.swagger.io/v2/pet/findByTags",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "b5QOZG"
+      },
+      "response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:13:22 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "[]"
+      },
+      "link": null,
+      "checks": [],
+      "meta": {
+        "generation": {
+          "time": 0.0012503999751061201,
+          "mode": "positive"
+        },
+        "components": {
+          "QUERY": "positive"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "Positive test case",
+            "location": null,
+            "parameter": null,
+            "parameter_location": null,
+            "mutations": []
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet/findByTags",
+      "path_parameters": {},
+      "query": {
+        "tags": [
+          "_",
+          "\ud8e1\udda0\u00ba\ud8af\udc09o\u008d\udb17\udee8rzAf\u0016U\u00f9",
+          "\u00c3",
+          "\u00acd\"\uda50\udd2d\uda79\udebe\u00f2"
+        ]
+      },
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    },
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/pet",
+      "url_template": "https://petstore.swagger.io/v2/pet",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "qNosVz",
+        "Content-Type": "application/json",
+        "Content-Length": "2776"
+      },
+      "response": {
+        "status_code": 500,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:13:22 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":500,\"type\":\"unknown\",\"message\":\"something bad happened\"}"
+      },
+      "link": {
+        "operationId": "GET /pet/findByTags -> [200] PutPet -> PUT /pet",
+        "parameters": {},
+        "requestBody": {
+          "id": "$response.body#/*/id"
+        }
+      },
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 500\nDocumented: 400, 404, 405"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 0.09363869996741414,
+          "mode": "negative"
+        },
+        "components": {
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "stateful",
+          "data": {
+            "type": "StatefulPhaseData",
+            "description": "- violates `type` at /properties/tags/items/properties/name (was string, became integer)\n- violates `type` at /properties/tags/items/properties/id (was integer, became array)\n- violates `minimum` at /properties/id",
+            "location": null,
+            "parameter": null,
+            "parameter_location": "BODY",
+            "mutations": [
+              {
+                "path": [
+                  "tags",
+                  "name"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/tags/items/properties/name",
+                "channel": "schema",
+                "operator": "change_type",
+                "keywords": [
+                  "type"
+                ],
+                "parameter": "name",
+                "original_value": "string",
+                "new_value": "integer"
+              },
+              {
+                "path": [
+                  "tags",
+                  "id"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/tags/items/properties/id",
+                "channel": "schema",
+                "operator": "change_type",
+                "keywords": [
+                  "type"
+                ],
+                "parameter": "id",
+                "original_value": "integer",
+                "new_value": "array"
+              },
+              {
+                "path": [
+                  "id"
+                ],
+                "parameter_location": "body",
+                "schema_pointer": "/properties/id",
+                "channel": "schema",
+                "operator": "negate_constraints",
+                "keywords": [
+                  "minimum"
+                ],
+                "parameter": "id",
+                "original_value": null,
+                "new_value": null
+              }
+            ]
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {}
+      },
+      "path": "/pet",
+      "path_parameters": {},
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "json",
+        "value": {
+          "\u00a8\u00dc\u0004\udb08\uddfa": {},
+          "a\u0001x\u009a\udb9b\udcca\u007f0\u00df\u00ab": {
+            "": [],
+            "None": false
+          },
+          "category": {
+            "\u00e3\u00d4": {
+              "\u00d7\u000e\u00c2\"": [
+                "",
+                "\"\u0084",
+                null
+              ]
+            },
+            "\u00de\ud90a\ude64\u00e4\u0010\ud815\udcb3\u0007\f\u00c6 \ud825\udfca\u0001&\u009e\u00abv\u00c4%\ud8f6\udf77\ud912\ude7b": {
+              "P\udbea\udf20\u008c=": {
+                "": null
+              }
+            },
+            "name": "([\u009c\u00fb\udb57\uddcf\u00dd\u0010z",
+            "id": -584
+          },
+          "name": "\u0084y",
+          "photoUrls": [
+            "\u00cb",
+            "B\u0096@\u00b3\ud98e\udd3b\u00b5\u00a1"
+          ],
+          "tags": [
+            {
+              "": [
+                [
+                  true
+                ],
+                2291,
+                -2.0533429636477874e-25
+              ],
+              "X\u00a1\n": 1.9164040365462815e+40,
+              "j\u00e9\u00f9\u00a8\u00f6Q+\uda23\ude57\udaa2\udc09)M\u00c3\u008a\u00dc)\ued21!\u0016\u0003\u00c3\u00b6": null,
+              "\u00a4\ud9fe\udc0b\u0011\udaff\udc52": [
+                "%"
+              ],
+              "\u00cd\u00a7\b": [
+                null,
+                "\u00bat\udae9\udc49\udaf0\udfe9\u0084"
+              ],
+              "id": [
+                {
+                  "\u00c1W": [
+                    "\ud880\udd23y<\u00e2\u00ca^",
+                    null,
+                    252330
+                  ]
+                }
+              ],
+              "name": -5128702829
+            },
+            {
+              "g\u0005\u0086t\u00f0": [
+                true
+              ],
+              "\uda42\udc1a": {
+                "\u00d0\u0080\u0011": "\u0003",
+                "f\u00b0\u007f\u00ec\u00ac": "\u007f",
+                "%\udbc0\udca0\u00d7_(": "\u0093"
+              },
+              "": [],
+              "\u00fc": {},
+              "\ud996\ude73C\u0090": {
+                "": {}
+              },
+              "id": [
+                [],
+                [],
+                null,
+                3.402823466e+38,
+                {
+                  "\u00aa\uda0d\udd35'\b": ""
+                },
+                -18804798354,
+                {}
+              ],
+              "name": 8319144164173
+            },
+            {
+              "5\udb46\udf90[\u0092\u00ab\udb65\ude89\u0002\u001b\ud972\uddd9\ud8c5\udfa4M": [
+                true
+              ],
+              "\u00ba\ud9c5\udd75\u000f+\uda26\udc40\u0083\ud87c\udf12": [
+                877,
+                null,
+                -1.7976931348623157e+308
+              ],
+              "7\u00ae\u00a0": {},
+              "\u001f\u0085\u001dt.(\u00a5": [],
+              "\ud95f\udc46": {},
+              "name": 118,
+              "id": [
+                [],
+                6696,
+                [
+                  false,
+                  1.9014867351838664e+16
+                ],
+                [
+                  []
+                ],
+                {
+                  "\u0094 \u000f": "{\u00d07",
+                  "\ud9da\udd95\u009d\udbac\udd4c\ud843\udd96\u008fj\u00c3\u0017\udb62\udeef\u0013\u00ea'\udbb2\udcfc\udb13\udc43\ud945\udf3cq~": true,
+                  "\u00d0z\u008b\ud829\udd59\ud988\ude73": -1.1
+                }
+              ]
+            },
+            {
+              "": {
+                "": false
+              },
+              "\u00fe\u00b3k\u009b\u001e": {
+                "S\u00a2\rG\uda6b\udcdc\u00e7\u0089\u00e2\udb04\udcc7\u00d2\u00cb\ud9b2\udc70\ud93e\uddca\u00b4\udb9c\udd15\udb48\uddf8\u00c2\u00d7\u0011\u00d7\u00d4": [
+                  4.1732182231414296e+16
+                ]
+              },
+              "\u00b6\u00fc\u00b7\u00b0": [
+                false,
+                -1075,
+                true
+              ],
+              "5\udb88\ude5e\u00d7\u0011\u00b3S\u00e4\udadf\ude54\ud9c0\udd75\uda02\udd17S\u00cey\u00b2\u0000\u00a0\u00e1\u001a": [
+                null
+              ],
+              "8;": {},
+              "name": 2269516,
+              "id": [
+                {
+                  "\u00a1\u0085": {
+                    "\ud835\udc13\ud835\udc21\ud835\udc1e \ud835\udc2a\ud835\udc2e\ud835\udc22\ud835\udc1c\ud835\udc24 \ud835\udc1b\ud835\udc2b\ud835\udc28\ud835\udc30\ud835\udc27 \ud835\udc1f\ud835\udc28\ud835\udc31 \ud835\udc23\ud835\udc2e\ud835\udc26\ud835\udc29\ud835\udc2c \ud835\udc28\ud835\udc2f\ud835\udc1e\ud835\udc2b \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc25\ud835\udc1a\ud835\udc33\ud835\udc32 \ud835\udc1d\ud835\udc28\ud835\udc20": [
+                      -5.3223664645634675e+69,
+                      "\u00d2",
+                      false
+                    ]
+                  }
+                },
+                {},
+                {}
+              ]
+            }
+          ],
+          "id": -389827257183631310848,
+          "status": "available"
+        }
+      },
+      "media_type": "application/json",
+      "parent_index": 0
+    }
+  ]
+}

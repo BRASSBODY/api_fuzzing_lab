@@ -1,0 +1,93 @@
+{
+  "operation": "PUT /user/{username}",
+  "method": "PUT",
+  "path_template": "/user/{username}",
+  "fingerprint": "b0511aac",
+  "case_id": "gSwhEV",
+  "code_sample": "curl -X PUT https://petstore.swagger.io/v2/user/0",
+  "sequence": [
+    {
+      "method": "PUT",
+      "url": "https://petstore.swagger.io/v2/user/0",
+      "url_template": "https://petstore.swagger.io/v2/user/{username}",
+      "headers": {
+        "User-Agent": "schemathesis/4.28.0",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept": "*/*",
+        "Connection": "keep-alive",
+        "X-Schemathesis-TestCaseId": "gSwhEV",
+        "Content-Length": "0"
+      },
+      "response": {
+        "status_code": 415,
+        "headers": {
+          "date": "Wed, 30 Sep 2026 13:08:15 GMT",
+          "content-type": "application/json",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "GET, POST, DELETE, PUT",
+          "access-control-allow-headers": "Content-Type, api_key, Authorization",
+          "server": "Jetty(9.2.9.v20150224)"
+        },
+        "body": "{\"code\":415,\"type\":\"unknown\",\"message\":\"com.sun.jersey.api.MessageException: A message body reader for Java class io.swagger.sample.model.User, and Java type class io.swagger.sample.model.User, and MIME media type application/octet-stream was not found.\\nThe registered message body readers compatible with the MIME media type are:\\n*/* ->\\n  com.sun.jersey.core.impl.provider.entity.FormProvider\\n  com.sun.jersey.core.impl.provider.entity.StringProvider\\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\\n  com.sun.jersey.core.impl.provider.entity.FileProvider\\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\\n  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General\\n  com.sun.jersey.core.impl.provider.entity.ReaderProvider\\n  com.sun.jersey.core.impl.provider.entity.DocumentProvider\\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader\\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader\\n  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader\\n  com.sun.jersey.json.impl.provider.entity.JSONJAXBElementProvider$General\\n  com.sun.jersey.json.impl.provider.entity.JSONArrayProvider$General\\n  com.sun.jersey.json.impl.provider.entity.JSONObjectProvider$General\\n  com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider\\n  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General\\n  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General\\n  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General\\n  com.sun.jersey.core.impl.provider.entity.EntityHolderReader\\n  com.sun.jersey.json.impl.provider.entity.JSONRootElementProvider$General\\n  com.sun.jersey.json.impl.provider.entity.JSONListElementProvider$General\\n  com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy\\napplication/octet-stream ->\\n  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider\\n  com.sun.jersey.core.impl.provider.entity.FileProvider\\n  com.sun.jersey.core.impl.provider.entity.InputStreamProvider\\n  com.sun.jersey.core.impl.provider.entity.DataSourceProvider\\n  com.sun.jersey.core.impl.provider.entity.RenderedImageProvider\\n\"}"
+      },
+      "link": null,
+      "checks": [
+        {
+          "name": "status_code_conformance",
+          "status": "failure",
+          "message": "Undocumented HTTP status code\n\nReceived: 415\nDocumented: 400, 404"
+        }
+      ],
+      "meta": {
+        "generation": {
+          "time": 3.029999788850546e-05,
+          "mode": "negative"
+        },
+        "components": {
+          "PATH": "positive",
+          "BODY": "negative"
+        },
+        "phase": {
+          "name": "coverage",
+          "data": {
+            "type": "CoveragePhaseData",
+            "description": "Missing request body",
+            "location": null,
+            "parameter": null,
+            "parameter_location": "BODY",
+            "scenario": "missing_parameter"
+          }
+        },
+        "pool_draws": [],
+        "pool_misses": [
+          [
+            "path",
+            "username"
+          ]
+        ],
+        "semantic_draws": [],
+        "dictionary_draws": [],
+        "constants_draws": [],
+        "raw_containers": {
+          "PATH": {
+            "username": "0"
+          }
+        }
+      },
+      "path": "/user/{username}",
+      "path_parameters": {
+        "username": "0"
+      },
+      "query": {},
+      "case_headers": {},
+      "cookies": {},
+      "case_body": {
+        "encoding": "none"
+      },
+      "media_type": null,
+      "parent_index": null
+    }
+  ]
+}
